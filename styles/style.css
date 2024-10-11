@@ -179,7 +179,7 @@ h1 {
 
     .cabecalho {
         padding: 10%;
-        gap: 30px;
+        gap: 10px;
     }
 
     .menu {
@@ -190,6 +190,7 @@ h1 {
 
     .aba {
         font-size: 1.25rem;
+        padding: 1%;
     }
 
     .filho01 {
