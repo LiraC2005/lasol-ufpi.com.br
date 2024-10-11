@@ -75,13 +75,13 @@ h1 {
 
     .cabecalho {
         padding: 10%;
-        gap: 30px;
+        gap: 80px;
     }
 
     .menu {
         justify-content: center;
         ;
-        gap: 30px;
+        gap: 10px;
     }
 
     .aba {
