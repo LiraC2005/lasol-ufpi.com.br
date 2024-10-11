@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #00222a;
+    --cor-secundaria: #ff9100;
+    --cor-terciaria: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    /* height: 100vh; */
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+strong {
+    color: #000000;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.titulo02 {
+    color: blue;
+    padding: 10px;
+}
+
+.Pai {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10%;
+    gap: 80px;
+    ;
+}
+
+.filho01 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo01 {
+    font-size: 1.875rem;
+    font-family: "Krona One", sans-serif;
+}
+
+.Paragrafo {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    font-size: 1.5rem;
+    background-color: var(--cor-primaria);
+    width: 40%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600px;
+    border: #00222a 4px solid;
+}
+
+.botao:hover {
+    /* background-color: #00222a; */
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.redes {
+    font-size: 1.25rem;
+    font-family: "Krona One", sans-serif;
+    color: rgb(2, 2, 110);
+    text-align: center;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.25rem;
+    font-family: "Krona One", sans-serif;
+    color: #00222a;
+    text-align: center;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 16%;
+}
+
+.menu {
+    display: flex;
+    gap: 60px;
+}
+
+.aba {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.75rem;
+    color: #00222a;
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+}
+
+.aba:hover {
+    color: #00222a;
+    border-radius: 5px;
+    background-color: aliceblue;
+    transition: 0.5s;
+}
+
+.ligantes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8%;
+    gap: 80px;
+}
+
+.liga {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fotoligantes {
+    width: 50%;
+}
+
+.logo {
+    width: 40%;
+}
+
+.dir {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 5%;
+}
+
+@media (max-width: 1200px) {
+    .Pai {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .cabecalho {
+        padding: 10%;
+        gap: 30px;
+    }
+
+    .menu {
+        justify-content: center;
+        ;
+        gap: 30px;
+    }
+
+    .aba {
+        font-size: 1.25rem;
+    }
+
+    .filho01 {
+        width: auto;
+    }
+
+    .botao {
+        font-size: 1.25rem;
+    }
+
+    .txtrodape {
+        font-size: 1.0rem;
+    }
+}
