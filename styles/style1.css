@@ -21,22 +21,38 @@ body {
 
 .principal {
     background-image: url("img/.png");
+    /* Imagem de fundo */
     background-repeat: no-repeat;
+    /* Repetição da imagem */
     background-size: contain;
-    display: flex;
+    /* Tamanho da imagem */
     align-items: center;
-    justify-content: center;
-    padding: 0% 1% 1% 10%;
-    gap: 5px;
-    
+    /* Alinhamento */
+    text-align: center;
+    /* Alinhamento do texto */
 }
 
 .container {
-    height: 80vh;
+    height: 100vh;
+    /* Altura */
     display: grid;
+    /* Exibição em grid */
     grid-template-columns: 50% 50%;
-    
+    /* Template de colunas */
 }
+
+
+.container__caixa {
+    margin: 0 6em;
+    /* Margem */
+}
+
+.container__img {
+    margin: 1em 0 2em 0;
+    /* Margem */
+    /* topo | direita | inferior | esquerda */
+}
+
 
 strong {
     color: #000000;
