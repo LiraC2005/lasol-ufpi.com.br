@@ -115,16 +115,6 @@ h1 {
         padding: 5%;
     }
 
-    .Paragrafo {
-        font-size: 1.0rem;
-    }
-    .titulo01 {
-        font-size: 1.5rem;
-    }
-    .titulo02 {
-        font-size: 1.5rem;
-    }
-
     .fotoligantes {
         width: 100%;
     }
@@ -154,13 +144,6 @@ h1 {
     }
 }
 
-.dir {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-    padding: 0 0 0 40%;
-}
 
 .mural {
     display: grid;
