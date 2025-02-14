@@ -14,8 +14,6 @@
 }
 
 body {
-    box-sizing: border-box;
-    /* height: 100vh; */
     background-color: var(--cor-secundaria);
     color: var(--cor-primaria);
 }
@@ -46,15 +44,12 @@ h1 {
 }
 
 .rodape {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
     font-size: 1.25rem;
     font-family: "Krona One", sans-serif;
     color: #00222a;
     text-align: center;
     padding: 30px;
+
 }
 
 .cabecalho {
@@ -114,13 +109,19 @@ h1 {
         transform: scale(1.5);
     }
 
+    .titulo02 {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
 
     .titulo01 {
-        width: 300px;
+        width: 100%;
         font-size: 1.5rem;
     }
 
     .Paragrafo {
+        width: 100%;
         font-size: 1.0rem;
     }
 
@@ -153,9 +154,18 @@ h1 {
         width: auto;
     }
 
-    .txtrodape {
-        font-size: 1.0rem;
+    .rodape {
+        font-size: 0.8rem;
+        font-family: "Krona One", sans-serif;
+        color: #00222a;
     }
+
+    .txtrodape {
+        font-size: 0.8rem;
+        font-family: "Krona One", sans-serif;
+        color: #00222a;
+        width: 750px;
+        }
 
     .mural {
         display: grid;

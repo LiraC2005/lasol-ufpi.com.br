@@ -48,9 +48,10 @@ body {
 }
 
 .container__img {
-    margin: 1em 0 2em 0;
-    /* Margem */
-    /* topo | direita | inferior | esquerda */
+    width: 80%;
+    /* Largura */
+    height: 50%;
+    /* Altura */
 }
 
 
@@ -141,7 +142,16 @@ h1 {
         font-size: 1.25rem;
         padding: 1%;
     }
-    .txtrodape {
-        font-size: 1.0rem;
+    .rodape {
+        font-size: 0.8rem;
+        font-family: "Krona One", sans-serif;
+        color: #00222a;
     }
+
+    .txtrodape {
+        font-size: 0.8rem;
+        font-family: "Krona One", sans-serif;
+        color: #00222a;
+        width: 750px;
+        }
 }
