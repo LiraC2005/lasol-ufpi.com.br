@@ -152,51 +152,36 @@ h1 {
     margin: 0 auto; /* Centraliza o mural */
 }
 
-.mural img {
-    width: 100%;
-    /* A imagem ocupa 100% da largura da célula */
-    height: auto;
-    /* Mantém a proporção da imagem */
-    border-radius: 10px;
-    /* Bordas arredondadas */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Sombra suave */
-    transition: transform 0.3s;
-    /* Transição suave para o efeito de hover */
+.imagem-container {
+    position: relative; /* Necessário para posicionar a descrição */
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse a imagem */
 }
+
+.mural img {
+    width: 100%; /* A imagem ocupa 100% da largura da célula */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s; /* Transição suave para o efeito de hover */
+}
+
 .mural img:hover {
     transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
 }
 
-.imagem-container {
-    position: relative;
-    /* Necessário para posicionar a descrição */
-}
-
 .descricao {
-    display: none;
-    /* Oculta a descrição por padrão */
-    position: absolute;
-    /* Posiciona a descrição em relação ao container */
-    bottom: 10px;
-    /* Distância do fundo */
-    left: 50%;
-    /* Centraliza horizontalmente */
-    transform: translateX(-50%);
-    /* Ajusta a posição para centralizar */
-    background-color: rgba(0, 0, 0, 0.7);
-    /* Fundo escuro com transparência */
-    color: #fff;
-    /* Texto branco */
-    padding: 5px 10px;
-    /* Espaçamento interno */
-    border-radius: 5px;
-    /* Bordas arredondadas */
-    white-space: nowrap;
-    /* Impede que o texto quebre em várias linhas */
+    display: none; /* Oculta a descrição por padrão */
+    position: absolute; /* Posiciona a descrição em relação ao container */
+    bottom: 0; /* Fica na parte inferior da imagem */
+    left: 0; /* Alinha à esquerda */
+    right: 0; /* Alinha à direita */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro com transparência */
+    color: #fff; /* Texto branco */
+    padding: 5px; /* Espaçamento interno */
+    border-radius: 0 0 10px 10px; /* Bordas arredondadas na parte inferior */
+    text-align: center; /* Centraliza o texto */
 }
 
 .imagem-container:hover .descricao {
-    display: block;
-    /* Exibe a descrição ao passar o mouse sobre a imagem */
+    display: block; /* Exibe a descrição ao passar o mouse sobre a imagem */
 }
