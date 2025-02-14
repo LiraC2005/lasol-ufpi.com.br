@@ -110,13 +110,27 @@ h1 {
 
 @media (max-width: 1200px) {
 
+    .todos {
+        transform: scale(1.5);
+    }
+
+
+    .titulo01 {
+        width: 300px;
+        font-size: 1.5rem;
+    }
+
+    .Paragrafo {
+        font-size: 1.0rem;
+    }
+
     .ligantes {
-        flex-direction: column-reverse;
-        padding: 5%;
+        flex-direction: row;
+        gap: 20%;
     }
 
     .fotoligantes {
-        width: 100%;
+        width: 50%;
     }
 
     .cabecalho {
@@ -142,6 +156,24 @@ h1 {
     .txtrodape {
         font-size: 1.0rem;
     }
+
+    .mural {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+        max-width: 80%;
+        /* Largura máxima do mural */
+        margin: 20px auto;
+        /* Centraliza o mural e adiciona um espaço em cima e embaixo */
+        padding: 0 10px;
+        /* Adiciona um padding lateral para evitar que o mural encoste nas bordas em telas pequenas */
+    }
+
+    .mural img {
+        transform: scale(0.8);
+        /* Aumenta a imagem ao passar o mouse */
+    }
+
 }
 
 
