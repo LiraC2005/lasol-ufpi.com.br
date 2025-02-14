@@ -48,10 +48,9 @@ body {
 }
 
 .container__img {
-    width: 80%;
-    /* Largura */
-    height: 50%;
-    /* Altura */
+    margin: 1em 0 20px 15px;
+    /* Margem */
+    /* topo | direita | inferior | esquerda */
 }
 
 

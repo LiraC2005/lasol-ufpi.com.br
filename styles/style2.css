@@ -111,18 +111,18 @@ h1 {
 
     .titulo02 {
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 
 
     .titulo01 {
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 
     .Paragrafo {
         width: 100%;
-        font-size: 1.0rem;
+        font-size: 1.0em;
     }
 
     .ligantes {
@@ -155,13 +155,13 @@ h1 {
     }
 
     .rodape {
-        font-size: 0.8rem;
+        font-size: 0.8em;
         font-family: "Krona One", sans-serif;
         color: #00222a;
     }
 
     .txtrodape {
-        font-size: 0.8rem;
+        font-size: 0.8em;
         font-family: "Krona One", sans-serif;
         color: #00222a;
         width: 750px;
