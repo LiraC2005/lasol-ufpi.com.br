@@ -149,7 +149,7 @@ h1 {
     justify-content: space-around;
     align-items: center;
     gap: 20px;
-    padding: 5%;
+    padding: 0 0 0 40%;
 }
 
 .mural {
