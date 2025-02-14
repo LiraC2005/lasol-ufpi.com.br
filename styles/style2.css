@@ -128,7 +128,6 @@ h1 {
     }
 
     .ligantes {
-        flex-direction: row;
         gap: 20%;
     }
 
@@ -143,7 +142,6 @@ h1 {
 
     .menu {
         justify-content: center;
-        ;
         gap: 10px;
     }
 
@@ -167,7 +165,7 @@ h1 {
         font-family: "Krona One", sans-serif;
         color: #00222a;
         width: 750px;
-        }
+    }
 
     .mural {
         display: grid;
