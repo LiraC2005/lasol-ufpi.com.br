@@ -93,3 +93,27 @@ h1 {
         font-size: 1.0rem;
     }
 }
+
+.seletivos {
+    padding: 20px;
+    background-color: var(--cor-terciaria);
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.seletivo {
+    border: 1px solid var(--cor-primaria);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+}
+
+.seletivo h3 {
+    color: var(--cor-secundaria);
+}
+
+.seletivo p {
+    margin: 5px 0;
+}
