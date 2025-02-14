@@ -163,6 +163,7 @@ h1 {
     align-items: center;
     gap: 20px;
     padding: 5%;
+    width: 100%;
 }
 
 @media (max-width: 1200px) {
