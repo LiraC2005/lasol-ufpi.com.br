@@ -48,7 +48,7 @@ body {
 }
 
 .container__img {
-    margin: 1em 0 20px 15px;
+    margin: 1em 0 2em 0;
     /* Margem */
     /* topo | direita | inferior | esquerda */
 }
@@ -141,16 +141,7 @@ h1 {
         font-size: 1.25rem;
         padding: 1%;
     }
-    .rodape {
-        font-size: 0.8rem;
-        font-family: "Krona One", sans-serif;
-        color: #00222a;
-    }
-
     .txtrodape {
-        font-size: 0.8rem;
-        font-family: "Krona One", sans-serif;
-        color: #00222a;
-        width: 750px;
-        }
+        font-size: 1.0rem;
+    }
 }

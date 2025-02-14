@@ -102,13 +102,15 @@ h1 {
 }
 
 .rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     font-size: 1.25rem;
     font-family: "Krona One", sans-serif;
     color: #00222a;
     text-align: center;
-    padding: 30px;
 }
-
 
 .cabecalho {
     padding: 2% 0% 0% 16%;
@@ -163,7 +165,6 @@ h1 {
     align-items: center;
     gap: 20px;
     padding: 5%;
-    width: 100%;
 }
 
 @media (max-width: 1200px) {

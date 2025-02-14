@@ -14,6 +14,8 @@
 }
 
 body {
+    box-sizing: border-box;
+    /* height: 100vh; */
     background-color: var(--cor-secundaria);
     color: var(--cor-primaria);
 }
@@ -44,12 +46,15 @@ h1 {
 }
 
 .rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     font-size: 1.25rem;
     font-family: "Krona One", sans-serif;
     color: #00222a;
     text-align: center;
     padding: 30px;
-
 }
 
 .cabecalho {
@@ -101,38 +106,17 @@ h1 {
     align-items: center;
     gap: 20px;
     padding: 5%;
-    width: 100%;
-
 }
 
 @media (max-width: 1200px) {
 
-    .todos {
-        transform: scale(1.5);
-    }
-
-    .titulo02 {
-        width: 100%;
-        font-size: 1.5em;
-    }
-
-
-    .titulo01 {
-        width: 100%;
-        font-size: 1.5em;
-    }
-
-    .Paragrafo {
-        width: 100%;
-        font-size: 1.0em;
-    }
-
     .ligantes {
-        gap: 20%;
+        flex-direction: column-reverse;
+        padding: 5%;
     }
 
     .fotoligantes {
-        width: 50%;
+        width: 100%;
     }
 
     .cabecalho {
@@ -142,6 +126,7 @@ h1 {
 
     .menu {
         justify-content: center;
+        ;
         gap: 10px;
     }
 
@@ -154,36 +139,9 @@ h1 {
         width: auto;
     }
 
-    .rodape {
-        font-size: 0.8em;
-        font-family: "Krona One", sans-serif;
-        color: #00222a;
-        width: 100%;
-    }
-
     .txtrodape {
-        font-size: 0.8em;
-        font-family: "Krona One", sans-serif;
-        color: #00222a;
+        font-size: 1.0rem;
     }
-
-    .mural {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 15px;
-        max-width: 80%;
-        /* Largura máxima do mural */
-        margin: 20px auto;
-        /* Centraliza o mural e adiciona um espaço em cima e embaixo */
-        padding: 0 10px;
-        /* Adiciona um padding lateral para evitar que o mural encoste nas bordas em telas pequenas */
-    }
-
-    .mural img {
-        transform: scale(1.2);
-        /* Aumenta a imagem ao passar o mouse */
-    }
-
 }
 
 
