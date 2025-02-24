@@ -2,6 +2,8 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="styles/style1.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,78 +19,75 @@
             <a class="aba" href="aba3.html">Seletivo</a>
         </nav>
     </header>
-    
+
     <section class="container principal">
         <div class="container__caixa">
             <h1 class="titulo01">Projetos da <strong class="titulo02">LASOL</strong></h1>
-            <p class="Paragrafo">Os projetos da LASOL são desenvolvidos por seus membros e colaboradores, e são voltados para a pesquisa e
+            <p class="Paragrafo">Os projetos da LASOL são desenvolvidos por seus membros e colaboradores, e são voltados
+                para a pesquisa e
                 desenvolvimento de tecnologias relacionadas à energia solar fotovoltaica.</p>
+        </div>
+        <div class="container__img">
+            <img src="asset/Bombeo-Solar.jpg" alt="">
         </div>
     </section>
 
     <section>
-            
-        <div>
-            <br><h2>!! ABA EM DESENVOLVIMENTO !!</h2><br>
-            <h1>Projetos da LASOL</h1>
-            <p>Os projetos da LASOL são desenvolvidos por seus membros e colaboradores, e são voltados para a pesquisa e
-                desenvolvimento de tecnologias relacionadas à energia solar fotovoltaica.</p>
-        </div>
-        <div>
-     <section>
 
-                <h2>Projetos em andamento:</h2>
+        <div>
+            <section class="carrossel">
+                <h2 class="carrossel__titulo">Projetos em andamento...</h2>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg"
+                                alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                        <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg"
+                                alt="Livro sobre liderança em design da alura books"></div>
+                        <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg"
+                                alt="Livro sobre javascript assertivo da alurabooks"></div>
+                        <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg" alt="Livro Guia front end"></div>
+                        <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg" alt="Livro sobre portugol"></div>
+                        <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg" alt="livro sobre acessibilidade">
+                        </div>
+                    </div>
+                    <!-- Código omitido -->
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </section>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script>
+                const swiper = new Swiper('.swiper', {
+                    spaceBetween: 10,
+                    slidesPerView: 3,
+                });
+            </script>
+
+            <section>
+                <h2>Projetos futuros:</h2>
                 <nl>
-                    <li>SerTaoSol</li>
-                    <li>CanideSolar</li>
-                    <li>Projeto 03</li>
-                    <li>Projeto 04</li>
+                    <li>Projeto 05</li>
+                    <li>Projeto 06</li>
+                    <li>Projeto 07</li>
+                    <li>Projeto 08</li>
                 </nl>
-    </section>
-    <section>
-            <h2>Projetos futuros:</h2>
-            <nl>
-                <li>Projeto 05</li>
-                <li>Projeto 06</li>
-                <li>Projeto 07</li>
-                <li>Projeto 08</li>
-            </nl>
         </div>
 
     </section>
-    <!--/*<main>
-        <section class="container principal">
-            <div></div>
-            <div class="bloco_inicial">
-            <h1 class="titulo01">Projetos da <strong class="titulo02">LASOL</strong></h1>
-            <p class="Paragrafo">Os projetos da LASOL são desenvolvidos por seus membros e colaboradores, e são voltados para a pesquisa e
-                desenvolvimento de tecnologias relacionadas à energia solar fotovoltaica.</p>
-            </div>
-        </section>
-    
-        <div>
-            <br><h2>!! ABA EM DESENVOLVIMENTO !!</h2><br>
-            <h1>Projetos da LASOL</h1>
-            <p>Os projetos da LASOL são desenvolvidos por seus membros e colaboradores, e são voltados para a pesquisa e
-                desenvolvimento de tecnologias relacionadas à energia solar fotovoltaica.</p>
-        </div>
-        <div>
-            <h2>Projetos em andamento:</h2>
-            <ul>
-                <li>SerTaoSol</li>
-                <li>CanideSolar</li>
-                <li>Projeto 03</li>
-                <li>Projeto 04</li>
-            </ul>
-            <h2>Projetos futuros:</h2>
-            <ul>
-                <li>Projeto 05</li>
-                <li>Projeto 06</li>
-                <li>Projeto 07</li>
-                <li>Projeto 08</li>
-            </ul>
-        </div>
-    </main>*/-->
     <footer class="rodape">
 
         <p class="txtrodape">Site desenvolvido pelo Ligante LUIS FERNANDO LIRA COELHO</p>
