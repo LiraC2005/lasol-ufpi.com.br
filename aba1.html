@@ -19,24 +19,38 @@
             <a class="aba" href="aba3.html">Seletivo</a>
         </nav>
     </header>
-
-    <section class="container principal">
+<!-- 
+    <main class="container principal">
+        
+        <img src="asset/Bombeo-Solar.jpg" alt="" class="container__img">
+        
         <div class="container__caixa">
             <h1 class="titulo01">Projetos da <strong class="titulo02">LASOL</strong></h1>
             <p class="Paragrafo">Os projetos da LASOL são desenvolvidos por seus membros e colaboradores, e são voltados
                 para a pesquisa e
                 desenvolvimento de tecnologias relacionadas à energia solar fotovoltaica.</p>
-        </div>
-        <div class="container__img">
-            <img src="asset/Bombeo-Solar.jpg" alt="">
-        </div>
-    </section>
+            </div>
+        </main>
+-->
+<main class="Pai">
+    <section class="filho01">
+        <h1 class="titulo01">Projetos da <strong class="titulo02">LASOL</strong>
+        </h1>
+        <p class="Paragrafo">Os projetos da LASOL são desenvolvidos por seus membros e colaboradores, e são voltados
+            para a pesquisa e
+            desenvolvimento de tecnologias relacionadas à energia solar fotovoltaica.</p>
 
-    <section>
+
+    </section>
+    <img src="asset/Bombeo-Solar.jpg" alt="Logo da LASOL" class="logo">
+</main>
+    <main class="mae">
 
         <div>
             <section class="carrossel">
-                <h2 class="carrossel__titulo">Projetos em andamento...</h2>
+                <div class="container__carrossel">
+                    <h1 class="carrossel__titulo">Projetos em andamento...</h1>
+                </div>
                 <!-- Slider main container -->
                 <div class="swiper">
                     <!-- Additional required wrapper -->
@@ -46,14 +60,17 @@
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg"
-                                alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                                alt=""></div>
                         <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg"
-                                alt="Livro sobre liderança em design da alura books"></div>
+                                alt=""></div>
                         <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg"
-                                alt="Livro sobre javascript assertivo da alurabooks"></div>
-                        <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg" alt="Livro Guia front end"></div>
-                        <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg" alt="Livro sobre portugol"></div>
-                        <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg" alt="livro sobre acessibilidade">
+                                alt=""></div>
+                        <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg" 
+                            alt=""></div>
+                        <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg" 
+                            alt=""></div>
+                        <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg" 
+                            alt="">
                         </div>
                     </div>
                     <!-- Código omitido -->
@@ -69,29 +86,59 @@
                 </div>
             </section>
 
-            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-            <script>
-                const swiper = new Swiper('.swiper', {
-                    spaceBetween: 10,
-                    slidesPerView: 3,
-                });
-            </script>
-
             <section>
-                <h2>Projetos futuros:</h2>
-                <nl>
-                    <li>Projeto 05</li>
-                    <li>Projeto 06</li>
-                    <li>Projeto 07</li>
-                    <li>Projeto 08</li>
-                </nl>
-        </div>
 
-    </section>
+                <div>
+                    <section class="carrossel">
+                        <div class="container__carrossel">
+                            <h1 class="carrossel__titulo">Projetos em andamento...</h1>
+                        </div>
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg"
+                                        alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                                <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg"
+                                        alt="Livro sobre liderança em design da alura books"></div>
+                                <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg"
+                                        alt="Livro sobre javascript assertivo da alurabooks"></div>
+                                <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg" alt="Livro Guia front end">
+                                </div>
+                                <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg" alt="Livro sobre portugol">
+                                </div>
+                                <div class="swiper-slide"><img src="asset/Bombeo-Solar.jpg"
+                                        alt="livro sobre acessibilidade">
+                                </div>
+                            </div>
+                            <!-- Código omitido -->
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </section>
+    </main>
     <footer class="rodape">
 
         <p class="txtrodape">Site desenvolvido pelo Ligante LUIS FERNANDO LIRA COELHO</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+        });
+    </script>
 </body>
 
 </html>

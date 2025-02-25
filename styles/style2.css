@@ -26,6 +26,7 @@ strong {
 
 h1 {
     font-weight: bold;
+    text-align: center;
 }
 
 .titulo02 {
@@ -54,7 +55,7 @@ h1 {
     font-family: "Krona One", sans-serif;
     color: #00222a;
     text-align: center;
-    padding: 30px;
+    padding: 1em;
 }
 
 .cabecalho {
@@ -89,7 +90,17 @@ h1 {
     gap: 80px;
 }
 
+.ligantess {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8%;
+    gap: 80px;
+}
+
+
 .liga {
+    display: flex;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -104,55 +115,16 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 20px;
-    padding: 5%;
+    gap: 15px;
+    padding: 2em;
 }
-
-@media (max-width: 1200px) {
-
-    .ligantes {
-        flex-direction: column;
-        padding: 5%;
-    }
-
-    .fotoligantes {
-        width: 100%;
-    }
-
-    .cabecalho {
-        padding: 10%;
-        gap: 10px;
-    }
-
-    .menu {
-        justify-content: center;
-        ;
-        gap: 10px;
-    }
-
-    .aba {
-        font-size: 1.25rem;
-        padding: 1%;
-    }
-
-    .liga {
-        width: auto;
-    }
-
-    .txtrodape {
-        font-size: 1.0rem;
-    }
-}
-
 
 .mural {
     display: grid;
-    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
     gap: 15px;
-    max-width: 800px;
+    max-width: 80%;
     /* Largura máxima do mural */
-    margin: 0 auto;
-    /* Centraliza o mural */
 }
 
 .imagem-container {
@@ -206,4 +178,56 @@ h1 {
 .imagem-container:hover .descricao {
     display: block;
     /* Exibe a descrição ao passar o mouse sobre a imagem */
+}
+
+@media (max-width: 1200px) {
+
+    .ligantes {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .ligantess {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .fotoligantes {
+        width: 100%;
+    }
+
+    .cabecalho {
+        padding: 10%;
+        gap: 10px;
+    }
+
+    .menu {
+        justify-content: center;
+        ;
+        gap: 10px;
+    }
+
+    .aba {
+        font-size: 1.25rem;
+        padding: 1%;
+    }
+
+    .liga {
+        width: auto;
+        flex-direction: column;
+    }
+
+    .txtrodape {
+        font-size: 1.0rem;
+    }
+
+    .mural {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        gap: 15px;
+        max-width: 800px;
+        /* Largura máxima do mural */
+        margin: 0 auto;
+        /* Centraliza o mural */
+    }
 }
