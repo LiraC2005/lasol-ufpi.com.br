@@ -141,7 +141,14 @@
     <script>
         const swiper = new Swiper('.swiper', {
             spaceBetween: 10,
-            slidesPerView: 3,
+            slidesPerView: 1,
+            breakpoints: {
+                // when window width is <= 1000px
+                1000: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                }
+            }
         });
     </script>
 </body>

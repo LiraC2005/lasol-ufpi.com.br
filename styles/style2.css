@@ -175,6 +175,7 @@ h1 {
     /* Bordas arredondadas na parte inferior */
     text-align: center;
     /* Centraliza o texto */
+    font-size: 1.5rem;
 }
 
 .imagem-container:hover .descricao {
@@ -202,12 +203,12 @@ h1 {
 
     .ligantes {
         flex-direction: column;
-        padding: 5%;
+        padding: 5% 5% 2% 5%;
     }
 
     .ligantess {
         flex-direction: column-reverse;
-        padding: 5%;
+        padding: 5% 5% 2% 5%;
     }
 
     .fotoligantes {
@@ -245,4 +246,17 @@ h1 {
         margin: 0 auto;
         /* Centraliza o mural */
     }
+
+    .descricao{
+        font-size: 1rem;
+    }
+
+    .imagem-container {
+        position: relative;
+        /* Necessário para posicionar a descrição */
+        overflow: visible;
+        /* Oculta qualquer conteúdo que ultrapasse a imagem */
+    }
+    
+
 }
