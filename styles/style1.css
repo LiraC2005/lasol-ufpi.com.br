@@ -72,11 +72,12 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-direction: column;
     font-size: 1.25rem;
     font-family: "Krona One", sans-serif;
     color: #00222a;
     text-align: center;
-    padding: 1em;
+    padding: 8em 1em 1em 1em;
 
 }
 
@@ -147,6 +148,22 @@ h1 {
     padding: 0 1em 1em 1em;
 }
 
+.txtrodape {
+    font-size: 0.5rem;
+}
+.social-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.rodape__img {
+    width: 1em;
+    height: 1em;
+}
+
 @media (max-width:1000px) {
 
     .Pai {
@@ -201,7 +218,4 @@ h1 {
         padding: 1%;
     }
 
-    .txtrodape {
-        font-size: 1.0rem;
-    }
 }

@@ -51,11 +51,13 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-direction: column;
     font-size: 1.25rem;
     font-family: "Krona One", sans-serif;
     color: #00222a;
     text-align: center;
-    padding: 1em;
+    padding: 8em 1em 1em 1em;
+
 }
 
 .cabecalho {
@@ -179,6 +181,22 @@ h1 {
     display: block;
     /* Exibe a descrição ao passar o mouse sobre a imagem */
 }
+.txtrodape {
+    font-size: 0.5rem;
+}
+.social-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.rodape__img {
+    width: 1em;
+    height: 1em;
+}
+
 
 @media (max-width: 1200px) {
 
@@ -217,9 +235,6 @@ h1 {
         flex-direction: column;
     }
 
-    .txtrodape {
-        font-size: 1.0rem;
-    }
 
     .mural {
         display: grid;
