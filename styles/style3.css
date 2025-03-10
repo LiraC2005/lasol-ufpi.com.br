@@ -128,6 +128,8 @@ h1 {
 
 .seletivo h3 {
     color: var(--cor-secundaria);
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .seletivo p {
