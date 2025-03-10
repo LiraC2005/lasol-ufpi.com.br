@@ -44,6 +44,7 @@ h1 {
     font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
     color: black;
+    text-align: center;
 }
 
 .rodape {
@@ -182,9 +183,11 @@ h1 {
     display: block;
     /* Exibe a descrição ao passar o mouse sobre a imagem */
 }
+
 .txtrodape {
     font-size: 0.5rem;
 }
+
 .social-logos {
     display: flex;
     justify-content: center;
@@ -247,7 +250,7 @@ h1 {
         /* Centraliza o mural */
     }
 
-    .descricao{
+    .descricao {
         font-size: 1rem;
     }
 
@@ -257,6 +260,6 @@ h1 {
         overflow: visible;
         /* Oculta qualquer conteúdo que ultrapasse a imagem */
     }
-    
+
 
 }
