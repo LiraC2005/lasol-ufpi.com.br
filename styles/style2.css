@@ -82,7 +82,7 @@ h1 {
     color: #00222a;
     border-radius: 5px;
     background-color: aliceblue;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .ligantes {
@@ -111,14 +111,15 @@ h1 {
 
 .card {
     background: transparent;
-    box-shadow: 1px 2px 4px 4px rgba(0, 0, 0, 0.459); 
-    border-radius: 10px; 
-    margin: 1em 0.5em; 
+    box-shadow: 1px 2px 4px 4px rgba(0, 0, 0, 0.459);
+    border-radius: 10px;
+    margin: 1em 0.5em;
     padding: 1em;
 }
 
 .fotoligantes {
     width: 50%;
+    scale: 0.8;
 }
 
 .dir {
@@ -127,6 +128,7 @@ h1 {
     align-items: center;
     gap: 15px;
     padding: 2em;
+    font-size: 3em;
 }
 
 .mural {
@@ -209,7 +211,12 @@ h1 {
 }
 
 
+
 @media (max-width: 1200px) {
+
+    .dir {
+        font-size: 2em;
+    }
 
     .ligantes {
         flex-direction: column;
