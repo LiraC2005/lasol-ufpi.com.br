@@ -232,6 +232,10 @@ h1 {
         font-size: 1.25rem;
     }
 
+    .Paragrafo {
+     text-align: justify;
+    }	
+
     .redes__nome {
         display: none;
     }
