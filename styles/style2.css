@@ -121,6 +121,10 @@ h1 {
     width: 50%;
     scale: 0.8;
 }
+.fotoligantess {
+    width: 50%;
+    scale: 1;
+}
 
 .dir {
     display: flex;
@@ -211,8 +215,127 @@ h1 {
 }
 
 
+.tutores__titulo{
+    padding: 3em 0em 2em 0em;
+    font-size: 3em;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    height: auto;
+}
+
+.tutores__img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 1px 2px 4px 4px rgba(0, 0, 0, 0.459);
+    
+}
+
+.tutores__nome {
+    font-size: 1.875rem;
+    font-family: "Krona One", sans-serif;
+    padding: 2em 0 0 0;
+}
+
+.tutores__descricao {
+    font-size: 1.6em;
+    text-align: justify;
+    padding: 2em;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+}
+
+
 
 @media (max-width: 1200px) {
+
+
+    .tutores__titulo {
+        font-size: 2em;
+    }
+
+    .tutores__img {
+        width: 70%;
+    }
+
+
+    .tutores__nome{
+        font-size: 1.8em;
+    }
+
+    .dir {
+        font-size: 2.5em;
+    }
+
+    .ligantes {
+        flex-direction: column;
+        padding: 5% 5% 2% 5%;
+    }
+
+    .ligantess {
+        flex-direction: column-reverse;
+        padding: 5% 5% 2% 5%;
+    }
+
+    .fotoligantes {
+        width: 100%;
+    }
+    .fotoligantess {
+        width: 100%;
+    }
+
+    .muraldosligantes{
+        font-size: 3em;
+        padding: 2em 0 0;
+    }
+
+    .dir{
+        font-size: 2.5em;
+        padding-top: 2em;
+    }
+
+    .cabecalho {
+        padding: 10%;
+        gap: 10px;
+    }
+
+    .menu {
+        justify-content: center;
+        ;
+        gap: 10px;
+    }
+
+    .aba {
+        font-size: 1.25rem;
+        padding: 1%;
+    }
+
+    .liga {
+        width: auto;
+        flex-direction: column;
+    }
+
+   .tutores__descricao {
+        font-size: 1em;
+    }
+
+    .tutores__nome{
+        font-size: 1.3em;
+    }
 
     .dir {
         font-size: 2em;
@@ -230,6 +353,19 @@ h1 {
 
     .fotoligantes {
         width: 100%;
+    }
+    .fotoligantess {
+        width: 100%;
+    }
+
+    .muraldosligantes{
+        font-size: 3em;
+        padding: 2em 0 0;
+    }
+
+    .dir{
+        font-size: 2.5em;
+        padding-top: 2em;
     }
 
     .cabecalho {
