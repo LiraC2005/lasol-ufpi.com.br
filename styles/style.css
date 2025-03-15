@@ -118,7 +118,7 @@ h1 {
     align-items: center;
     gap: 20px;
     flex-direction: column;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-family: "Krona One", sans-serif;
     color: #00222a;
     text-align: center;
@@ -182,7 +182,7 @@ h1 {
 }
 
 .txtrodape {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
 }
 
 .social-logos {
@@ -238,6 +238,14 @@ h1 {
 
     .redes__nome {
         display: none;
+    }
+
+    .txtrodape {
+        font-size: 0.5rem;
+    }
+
+    .rodape {
+        font-size: 1.25rem;
     }
 
 }
