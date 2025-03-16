@@ -120,10 +120,13 @@ h1 {
 .fotoligantes {
     width: 50%;
     scale: 0.8;
+    background: transparent;
+    box-shadow: 1px 2px 4px 4px rgba(0, 0, 0, 0.459);
+    border-radius: 10px;
 }
 .fotoligantess {
     width: 50%;
-    scale: 1;
+    
 }
 
 .dir {
