@@ -427,10 +427,13 @@ h1 {
     }
 
     .tutores__descricao {
-        font-size: 1em;
+        font-size: 0.8em;
         height: 60em;
 
     }
 
+    .Paragrafo{
+        font-size: 1em;
+    }
 
 }
