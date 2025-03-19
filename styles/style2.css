@@ -426,8 +426,10 @@ h1 {
         /* Oculta qualquer conteúdo que ultrapasse a imagem */
     }
 
-    .bloco {
-        width: 100%;
+    .tutores__descricao {
+        font-size: 1em;
+        height: 60em;
+
     }
 
 
