@@ -41,10 +41,11 @@ h1 {
 }
 
 .Paragrafo {
-    font-size: 1.5rem;
+    font-size: 1em;
     font-family: "Montserrat", sans-serif;
     color: black;
-    text-align: center;
+    text-align: justify;
+    padding: 0 2em 2em 2em;
 }
 
 .rodape {
@@ -124,9 +125,10 @@ h1 {
     box-shadow: 1px 2px 4px 4px rgba(0, 0, 0, 0.459);
     border-radius: 10px;
 }
+
 .fotoligantess {
     width: 50%;
-    
+
 }
 
 .dir {
@@ -218,7 +220,7 @@ h1 {
 }
 
 
-.tutores__titulo{
+.tutores__titulo {
     padding: 3em 0em 2em 0em;
     font-size: 3em;
 }
@@ -245,7 +247,7 @@ h1 {
     border-radius: 10px;
     background: transparent;
     box-shadow: 1px 2px 4px 4px rgba(0, 0, 0, 0.459);
-    
+
 }
 
 .tutores__nome {
@@ -262,9 +264,14 @@ h1 {
     color: black;
 }
 
+.tutores__descricao {
+    height: 30em;
+
+}
 
 
-@media (max-width: 1200px) {
+
+@media (max-width: 1300px) {
 
     .txtrodape {
         font-size: 0.5rem;
@@ -284,7 +291,7 @@ h1 {
     }
 
 
-    .tutores__nome{
+    .tutores__nome {
         font-size: 1.8em;
     }
 
@@ -305,16 +312,17 @@ h1 {
     .fotoligantes {
         width: 100%;
     }
+
     .fotoligantess {
         width: 100%;
     }
 
-    .muraldosligantes{
+    .muraldosligantes {
         font-size: 3em;
         padding: 2em 0 0;
     }
 
-    .dir{
+    .dir {
         font-size: 2.5em;
         padding-top: 2em;
     }
@@ -340,11 +348,11 @@ h1 {
         flex-direction: column;
     }
 
-   .tutores__descricao {
+    .tutores__descricao {
         font-size: 1em;
     }
 
-    .tutores__nome{
+    .tutores__nome {
         font-size: 1.3em;
     }
 
@@ -365,16 +373,17 @@ h1 {
     .fotoligantes {
         width: 100%;
     }
+
     .fotoligantess {
         width: 100%;
     }
 
-    .muraldosligantes{
+    .muraldosligantes {
         font-size: 3em;
         padding: 2em 0 0;
     }
 
-    .dir{
+    .dir {
         font-size: 2.5em;
         padding-top: 2em;
     }
@@ -427,13 +436,13 @@ h1 {
     }
 
     .tutores__descricao {
-        font-size: 0.8em;
+        font-size: 1em;
         height: 60em;
 
     }
 
-    .Paragrafo{
-        font-size: 1em;
+    .Paragrafo {
+        font-size: 1.4rem;
     }
 
 }
