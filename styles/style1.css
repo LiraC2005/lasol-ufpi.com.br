@@ -111,7 +111,7 @@ h1 {
 }
 
 .carrossel__titulo {
-    color: rgb(0, 0, 163);
+    color: rgb(0, 0, 0);
     background-color: var(--cor-secundaria);
     text-align: center;
     text-transform: uppercase;
