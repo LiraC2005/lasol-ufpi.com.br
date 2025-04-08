@@ -51,16 +51,16 @@ h1 {
 }
 
 .titulo01 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Krona One", sans-serif;
     text-align: center;
 }
 
 .Paragrafo {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: "Montserrat", sans-serif;
     color: black;
-    text-align: center;
+    text-align: justify;
 }
 
 .redes__nome {
@@ -171,6 +171,7 @@ h1 {
 
 .logo {
     width: 50%;
+    border-radius: 50px;
 }
 
 .dir {
@@ -197,7 +198,11 @@ h1 {
     width: 1em;
     height: 1em;
 }
-
+@media (max-width: 1370px){
+    .redes__nome {
+        display: none;
+    }
+}
 @media (max-width: 1000px) {
     .Pai {
         flex-direction: column-reverse;

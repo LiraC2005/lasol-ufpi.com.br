@@ -36,7 +36,7 @@ h1 {
 
 
 .titulo01 {
-    font-size: 1.875rem;
+    font-size: 1.5em;
     font-family: "Krona One", sans-serif;
 }
 
@@ -128,6 +128,7 @@ h1 {
 
 .fotoligantess {
     width: 50%;
+    border-radius: 50px;
 
 }
 
@@ -283,7 +284,7 @@ h1 {
 
 
 
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
 
     .txtrodape {
         font-size: 0.5rem;
