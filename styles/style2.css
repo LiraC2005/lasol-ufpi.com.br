@@ -423,31 +423,16 @@ h1 {
         padding: 1%;
     }
 
-    
     .cabecalho__ligantes {
-        margin-bottom: 50px;
-        gap: 10px;
-    }
-
-    .menu__ligantes {
-        justify-content: center;
-        margin: 0;
-        gap: 10px;
+        transform: scale(1);
     }
 
     .aba__ligantes {
-        font-size: 0.6rem;
-
-       padding: 5px 10px 5px 10px;
-    }
-
-    .aba__ligantes:hover {
-        color: aliceblue;
-        border-radius: 5px;
-        background-color: #00222a;
-        transition: 0.3s;
-    }
-
+        font-size: 1.25rem;
+        padding: 1%;
+        font-size: 0.5rem;
+    }   
+    
 
     .liga {
         width: auto;
