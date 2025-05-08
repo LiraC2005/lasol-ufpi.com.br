@@ -80,12 +80,13 @@ h1 {
 }
 
 .cabecalho {
-    padding: 2% 0% 0% 16%;
+    padding: 2% 0% 0% 0%;
 }
 
 .menu {
     display: flex;
     gap: 60px;
+    justify-content: center;
 }
 
 .aba {
@@ -100,7 +101,7 @@ h1 {
     color: #00222a;
     border-radius: 5px;
     background-color: aliceblue;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .dir {
