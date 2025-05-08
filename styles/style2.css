@@ -428,9 +428,8 @@ h1 {
     }
 
     .aba__ligantes {
-        font-size: 1.25rem;
-        padding: 1%;
-        font-size: 0.5rem;
+        padding: 5px;
+        font-size: 0.5em;
     }   
     
 
