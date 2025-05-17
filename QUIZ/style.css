@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -170,11 +178,11 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 5px;
-  background-color: var(--cor-secundaria);
+  background: linear-gradient(90deg, #ff9100 0%, #a75f00 100%);
 }
 
 body h2 {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 main {
@@ -182,11 +190,13 @@ main {
   padding: 10px;
   border-radius: 10px;
   width: 100%;
-  max-width: 300px;
-  min-height: 200px;
+  max-width: 700px;
+  min-height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  font-size: 28px;
 }
 
 .content {
@@ -197,24 +207,26 @@ main {
 }
 
 .spnQtd {
-  text-align: end;
+  text-align: center;
 }
 
 .answers {
   display: flex;
   flex-direction: column;
   gap: 5px;
+
 }
 
 button {
   width: 100%;
-  text-align: start;
+  text-align: center;
   padding: 5px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   background-color: #008CCC;
   color: white;
+  font-size: 20px;
 }
 
 .finish {
@@ -226,3 +238,81 @@ button {
 .finish button {
   text-align: center;
 }
+
+.select-difficulty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 20px auto;
+}
+
+.select-difficulty h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: #ff9100;
+  margin-bottom: 5px;
+}
+
+.select-difficulty button {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #008CCC;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  text-align: center;
+}
+
+.select-difficulty button:hover {
+  background-color: #ff9100;
+  color: #fff;
+}
+
+/* ...existing code... */
+
+.timer {
+  font-size: 1.1rem;
+  color: #008CCC;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* ...existing code... */
+@media (max-width: 900px) {
+  main {
+    width: 90%;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .select-difficulty {
+    width: 100%;
+    max-width: none;
+  }
+
+  .select-difficulty button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+button {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #008CCC;
+  color: white;
+  font-size: 12px;
+}
+}
+

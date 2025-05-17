@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  <link rel="stylesheet" href="/QUIZ/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-   <header>
+
+<body>
+       <header>
     <nav>
       <a class="logo" href="index.html"><img class="logo-img" src="/asset/LOGO.jpg" alt="logo da LASOL"></img></a>
       <div class="mobile-menu">
@@ -27,10 +29,16 @@
       </ul>
     </nav>
   </header>
-<body>
+
 
   <h2>QUIZ SOLAR</h2>
   <main>
+    <div class="select-difficulty">
+      <h3>Escolha o nível de dificuldade:</h3>
+      <button data-difficulty="facil">Fácil</button>
+      <button data-difficulty="medio">Médio</button>
+      <button data-difficulty="dificil">Difícil</button>
+    </div>
     <div class="content">
       <span class="spnQtd"></span>
       <span class="question"></span>
@@ -42,7 +50,6 @@
     </div>
   </main>
   
-  <script src="/QUIZ/script.js" type="module"></script>
-  <script src="/BACK/navbar/mobile-navbar.js"></script>
+  <script src="script.js" type="module"></script>
 </body>
 </html>

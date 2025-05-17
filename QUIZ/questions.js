@@ -1,6 +1,7 @@
 export default [
   {
     question: "O que é energia solar?",
+    difficulty: "facil",
     answers: [
       { option: "A energia gerada pelos ventos.", correct: false },
       { option: "A energia proveniente da água.", correct: false },
@@ -10,6 +11,7 @@ export default [
   },
   {
     question: "Qual é a principal fonte da energia solar?",
+    difficulty: "facil",
     answers: [
       { option: "Eles transformam o vento em energia elétrica.", correct: false },
       { option: "Eles armazenam energia térmica e liberam eletricidade.", correct: true },
@@ -19,6 +21,7 @@ export default [
   },
   {
     question: "Como os painéis solares geram eletricidade?",
+    difficulty: "facil",
     answers: [
       { option: "Eles transformam o vento em energia elétrica.", correct: false },
       { option: "90", correct: false },
@@ -28,6 +31,7 @@ export default [
   },
   {
     question: "A energia solar é renovável ou não renovável?",
+    difficulty: "facil",
     answers: [
       { option: "70", correct: false },
       { option: "56", correct: false },
@@ -37,6 +41,7 @@ export default [
   },
   {
     question: "Qual é o principal benefício da energia solar para o meio ambiente?",
+    difficulty: "facil",
     answers: [
       { option: "70", correct: false },
       { option: "56", correct: false },
@@ -46,6 +51,7 @@ export default [
   },
   {
     question: "Onde os painéis solares são normalmente instalados?",
+    difficulty: "facil",
     answers: [
       { option: "70", correct: false },
       { option: "56", correct: false },
@@ -55,6 +61,7 @@ export default [
   },
   {
     question: "A energia solar pode ser utilizada durante a noite? Por quê?",
+    difficulty: "facil",
     answers: [
       { option: "70", correct: false },
       { option: "56", correct: false },
@@ -64,6 +71,7 @@ export default [
   },
   {
     question: "Qual país tem grande produção de energia solar?",
+    difficulty: "facil",
     answers: [
       { option: "70", correct: false },
       { option: "56", correct: false },
@@ -73,6 +81,7 @@ export default [
   },
   {
     question: "O que acontece com a energia extra gerada por um painel solar?",
+    difficulty: "facil",
     answers: [
       { option: "70", correct: false },
       { option: "56", correct: false },
@@ -82,6 +91,7 @@ export default [
   },
   {
     question: "Além da eletricidade, para que mais a energia solar pode ser usada?",
+    difficulty: "facil",
     answers: [
       { option: "70", correct: false },
       { option: "56", correct: false },
