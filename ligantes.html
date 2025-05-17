@@ -9,14 +9,22 @@
 </head>
 
 <body>
-    <header class="cabecalho">
-        <nav class="menu">
-            <a class="aba" href="index.html">Inicio</a>
-            <a class="aba" href="projetos.html">Projetos</a>
-            <a class="aba" href="ligantes.html" style="background-color: aliceblue; border-radius: 5px;">Ligantes</a>
-            <a class="aba" href="seletivo.html">Seletivo</a>
-        </nav>
-    </header>
+     <header>
+    <nav>
+      <a class="logo" href="index.html"><img class="logo-img" src="/asset/LOGO.jpg" alt="logo da LASOL"></img></a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a class="aba" href="index.html" >Início</a></li>
+        <li><a class="aba" href="projetos.html">Projetos</a></li>
+        <li><a class="aba" href="ligantes.html" style="background-color: white; color: black;">Ligantes</a></li>
+        <li><a class="aba" href="seletivo.html">Seletivo</a></li>
+      </ul>
+    </nav>
+  </header>
 
     <main class="ligantess">
         <section class="liga">
@@ -33,13 +41,13 @@
         </section>
         <img src="./asset/ligantes_resized.jpg" alt="foto dos ligantes" class="fotoligantess">
     </main>
-    <header class="cabecalho__ligantes">
+    <div class="cabecalho__ligantes" style="background-color: #ff9100;">
         <nav class="menu__ligantes">
             <a class="aba__ligantes" href="#Presidência/Diretorias">Presidência/Diretorias</a>
             <a class="aba__ligantes" href="#Mural_dos_Ligantes">Mural de Ligantes</a>
             <a class="aba__ligantes" href="#DOCENTES_ORIENTADORES">Docentes Orientadores</a>
         </nav>
-    </header>
+    </div>
     <div class="caixa">
         <h1 class="dir ligantes" id="Presidência/Diretorias">PRESIDÊNCIA</h1>
     </div>
@@ -379,6 +387,8 @@
         </div>
 
     </footer>
+    <script src="/BACK/navbar/mobile-navbar.js"></script>
+
 </body>
 
 </html>
