@@ -102,7 +102,7 @@ function nextQuestion(e) {
   const timeSpent = Math.floor((questionEndTime - questionStartTime) / 1000); // em segundos
 
   // Pontuação: quanto mais rápido, mais pontos (máx 100, mínimo 10)
-  let score = Math.max(100 - timeSpent * 10, 10);
+  let score = Math.max(100 - timeSpent * 1, 10);
   let pontosAntes = totalScore;
   if (isCorrect) {
     questionsCorrect++;
@@ -163,15 +163,16 @@ function loadQuestion() {
 
   pointsSpan.textContent = `Pontos: ${totalScore}`;
 
-  item.answers.forEach((answer) => {
-    const div = document.createElement("div");
+  // Embaralha as respostas antes de exibir
+  const shuffledAnswers = shuffle([...item.answers]);
 
+  shuffledAnswers.forEach((answer) => {
+    const div = document.createElement("div");
     div.innerHTML = `
     <button class="answer" data-correct="${answer.correct}">
       ${answer.option}
     </button>
     `;
-
     answers.appendChild(div);
   });
 

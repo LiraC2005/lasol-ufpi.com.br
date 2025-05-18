@@ -1,21 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-family: 'Krona One', sans-serif !important;
+    color: #00222a;
+    text-align: center;
+    padding: 8em 1em 1em 1em;
+
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
 }
 /* ...existing code... */
+
+
+
+.txtrodape {
+    font-size: 0.7rem;
+    font-family: 'Krona One', sans-serif !important;
+}
+
+.social-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.rodape__img {
+    width: 1em;
+    height: 1em;
+}
+
 
 h2 {
   margin-top: 100px;
@@ -76,7 +110,7 @@ header {
   /* Largura da imagem do logo */
   height: auto;
   /* Altura automática para manter a proporção */
-  margin: 0 1em;
+  margin: 0.4em 1em 0 0;
   /* Margem horizontal */
   border-radius: 5px
 }
@@ -85,6 +119,8 @@ header {
   /* Estilizando o menu de navegação */
   display: flex;
 }
+
+
 
 
 
@@ -138,6 +174,9 @@ nav {
 }
 
 @media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
 
   .nav-list {
     position: absolute;
@@ -314,6 +353,14 @@ button {
     padding: 10px;
     font-size: 20px;
   }
+      .txtrodape {
+        font-size: 0.5rem;
+    }
+
+    .rodape {
+        font-size: 1.25rem;
+    }
+
 
   .select-difficulty {
     width: 100%;

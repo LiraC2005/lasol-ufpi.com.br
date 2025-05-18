@@ -42,7 +42,7 @@ header {
   /* Largura da imagem do logo */
   height: auto;
   /* Altura automática para manter a proporção */
-  margin: 0 1em;
+  margin: 0.2em 1em 0 0;
   /* Margem horizontal */
   border-radius: 5px
 }
