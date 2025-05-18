@@ -15,7 +15,23 @@
   margin: 0;
   padding: 0;
 }
+/* ...existing code... */
 
+
+
+.btn-correct {
+  background-color: green !important;
+  color: #fff !important;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-wrong {
+  background-color: red !important;
+  color: #fff !important;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* ...existing code... */
 
 :root {
     --cor-primaria: #00222a;
@@ -273,6 +289,10 @@ button {
   background-color: #ff9100;
   color: #fff;
 }
+
+/* ...existing code... */
+
+/* ...existing code... */
 
 /* ...existing code... */
 

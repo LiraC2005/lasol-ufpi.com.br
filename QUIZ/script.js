@@ -12,6 +12,7 @@ import questions from "./questions.js";
 let currentIndex = 0;
 let questionsCorrect = 0;
 let filteredQuestions = [];
+let totalScore = 0;
 
 // Timer
 const timerSpan = document.createElement("span");
@@ -19,6 +20,7 @@ timerSpan.className = "timer";
 timerSpan.style.marginBottom = "10px";
 let timerInterval = null;
 let seconds = 0;
+let questionStartTime = 0;
 content.insertBefore(timerSpan, content.firstChild);
 
 function startTimer() {
@@ -67,6 +69,7 @@ document.querySelectorAll(".select-difficulty button").forEach(btn => {
     filteredQuestions = shuffle([...questionsByLevel]).slice(0, 10);
     currentIndex = 0;
     questionsCorrect = 0;
+    totalScore = 0;
     hideDifficulty();
     startTimer();
     loadQuestion();
@@ -79,21 +82,47 @@ btnRestart.onclick = () => {
 };
 
 function nextQuestion(e) {
-  if (e.target.getAttribute("data-correct") === "true") {
+  const btn = e.target;
+  const isCorrect = btn.getAttribute("data-correct") === "true";
+
+  // Calcula tempo gasto nesta questão
+  const questionEndTime = Date.now();
+  const timeSpent = Math.floor((questionEndTime - questionStartTime) / 1000); // em segundos
+
+  // Pontuação: quanto mais rápido, mais pontos (máx 100, mínimo 10)
+  let score = 0;
+  if (isCorrect) {
     questionsCorrect++;
+    score = Math.max(100 - timeSpent * 10, 10);
+    totalScore += score;
   }
 
-  if (currentIndex < filteredQuestions.length - 1) {
-    currentIndex++;
-    loadQuestion();
-  } else {
-    finish();
-  }
+  // Marca todos os botões: verde para corretos, vermelho para errados
+  document.querySelectorAll(".answer").forEach(b => {
+    b.disabled = true;
+    if (b.getAttribute("data-correct") === "true") {
+      b.classList.add("btn-correct");
+    } else {
+      b.classList.add("btn-wrong");
+    }
+  });
+
+  setTimeout(() => {
+    document.querySelectorAll(".answer").forEach(b => {
+      b.classList.remove("btn-correct", "btn-wrong");
+    });
+    if (currentIndex < filteredQuestions.length - 1) {
+      currentIndex++;
+      loadQuestion();
+    } else {
+      finish();
+    }
+  }, 900);
 }
 
 function finish() {
   stopTimer();
-  textFinish.innerHTML = `você acertou ${questionsCorrect} de ${filteredQuestions.length}<br>Tempo: ${seconds}s`;
+  textFinish.innerHTML = `você acertou ${questionsCorrect} de ${filteredQuestions.length}<br>Tempo: ${seconds}s<br>Pontuação: ${totalScore}`;
   content.style.display = "none";
   contentFinish.style.display = "flex";
 }
@@ -115,6 +144,9 @@ function loadQuestion() {
 
     answers.appendChild(div);
   });
+
+  // Marca o início da contagem de tempo para esta questão
+  questionStartTime = Date.now();
 
   document.querySelectorAll(".answer").forEach((item) => {
     item.addEventListener("click", nextQuestion);
