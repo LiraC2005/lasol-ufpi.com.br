@@ -17,7 +17,17 @@
 }
 /* ...existing code... */
 
+h2 {
+  margin-top: 100px;
+}
 
+.question-points {
+  color: #008CCC;
+  margin-bottom: 10px;
+  display: block;
+  min-height: 24px;
+  text-align: center;
+}
 
 .btn-correct {
   background-color: green !important;
@@ -128,9 +138,6 @@ nav {
 }
 
 @media (max-width: 999px) {
-  body {
-    overflow-x: hidden;
-  }
 
   .nav-list {
     position: absolute;
@@ -188,13 +195,12 @@ nav {
 
 
 body {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 5px;
-  background: linear-gradient(90deg, #ff9100 0%, #a75f00 100%);
+  background: var(--cor-secundaria);
 }
 
 body h2 {
@@ -213,6 +219,8 @@ main {
   justify-content: center;
   text-align: center;
   font-size: 28px;
+  /* Sombreamento */
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18), 0 1.5px 4px 0 rgba(0,0,0,0.15);
 }
 
 .content {
@@ -290,11 +298,6 @@ button {
   color: #fff;
 }
 
-/* ...existing code... */
-
-/* ...existing code... */
-
-/* ...existing code... */
 
 .timer {
   font-size: 1.1rem;
@@ -334,5 +337,20 @@ button {
   color: white;
   font-size: 16px;
 }
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.center-content table {
+  margin: 0 auto;
+}
+.center-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
