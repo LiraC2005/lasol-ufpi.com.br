@@ -333,10 +333,10 @@ export default [
     difficulty: "medio",
     image: "img/grafico-geracao-anual.png",
     answers: [
-      { option: "Junho", correct: true },
+      { option: "Junho", correct: false },
       { option: "Janeiro", correct: false },
       { option: "Outubro", correct: false },
-      { option: "Dezembro", correct: false },
+      { option: "Dezembro", correct: true },
     ],
   },
   {
