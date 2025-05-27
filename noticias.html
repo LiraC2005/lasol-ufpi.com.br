@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notícias LASOL</title>
+  <link rel="stylesheet" href="/NOTICIAS/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="index.html"><img class="logo-img" src="/asset/LOGO.jpg" alt="logo da LASOL"></a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a class="aba" href="index.html">Início</a></li>
+        <li><a class="aba" href="projetos.html">Projetos</a></li>
+        <li><a class="aba" href="ligantes.html">Ligantes</a></li>
+        <li><a class="aba" href="seletivo.html">Seletivo</a></li>
+        <li><a class="aba" href="quiz.html">Quiz</a></li>
+        <li><a class="aba" href="noticias.html" style="background-color: white; color: black;">Notícias</a></li>
+      </ul>
+    </nav>
+  </header>
+<div class="pesquisa-noticia-container">
+  <input
+    type="text"
+    id="pesquisa-noticia"
+    placeholder="Pesquise aqui..."
+    class="pesquisa-noticia-input"
+    oninput="filtrarNoticias()"
+    autocomplete="off"
+  />
+</div>
+  <main>
+    <div class="noticias-container">
+      <div class="noticia">
+        <div class="noticia-data">27/05/2025</div>
+        <div class="noticia-titulo">LASOL realiza instalação de sistema solar em escola pública</div>
+        <div class="noticia-texto">
+          No último sábado, membros da LASOL participaram da instalação de um sistema fotovoltaico em uma escola pública da cidade. O projeto, que contou com a colaboração de estudantes e professores, visa promover a sustentabilidade e reduzir os custos de energia da instituição. Além da instalação, foram realizadas palestras educativas sobre energia solar para alunos e comunidade local.
+        </div>
+      </div>
+      <div class="noticia">
+        <div class="noticia-data">20/05/2025</div>
+        <div class="noticia-titulo">Equipe LASOL vence prêmio de inovação em energia renovável</div>
+        <div class="noticia-texto">
+          A equipe da LASOL foi premiada em um concurso nacional de inovação por desenvolver um sistema inteligente de monitoramento de painéis solares, destacando-se entre mais de 100 projetos inscritos.
+        </div>
+      </div>
+      <div class="noticia">
+        <div class="noticia-data">15/05/2025</div>
+        <div class="noticia-titulo">LASOL promove workshop sobre sustentabilidade energética</div>
+        <div class="noticia-texto">
+          O workshop reuniu especialistas e estudantes para debater soluções sustentáveis e apresentar novas tecnologias no setor de energia solar, com oficinas práticas e palestras.
+        </div>
+      </div>
+      <div class="noticia">
+        <div class="noticia-data">10/05/2025</div>
+        <div class="noticia-titulo">Nova parceria entre LASOL e prefeitura incentiva energia limpa</div>
+        <div class="noticia-texto">
+          Uma parceria firmada com a prefeitura local irá viabilizar a instalação de painéis solares em prédios públicos, promovendo economia e consciência ambiental.
+        </div>
+      </div>
+      <div class="noticia">
+        <div class="noticia-data">05/05/2025</div>
+        <div class="noticia-titulo">LASOL lança campanha educativa sobre energia solar nas escolas</div>
+        <div class="noticia-texto">
+          A campanha visa conscientizar alunos do ensino fundamental sobre os benefícios da energia solar, com atividades lúdicas e distribuição de materiais informativos.
+        </div>
+      </div>
+      <div class="noticia">
+        <div class="noticia-data">01/05/2025</div>
+        <div class="noticia-titulo">Projeto de extensão da LASOL leva energia solar a comunidades rurais</div>
+        <div class="noticia-texto">
+          Comunidades rurais da região passaram a contar com sistemas fotovoltaicos graças ao projeto de extensão da LASOL, melhorando a qualidade de vida dos moradores.
+        </div>
+      </div>
+      <div class="noticia">
+        <div class="noticia-data">28/04/2025</div>
+        <div class="noticia-titulo">LASOL participa de feira internacional de tecnologia</div>
+        <div class="noticia-texto">
+          Representantes da LASOL apresentaram projetos inovadores em energia solar durante a feira internacional, ampliando parcerias e trocando experiências com pesquisadores de outros países.
+        </div>
+      </div>
+      <div class="noticia">
+        <div class="noticia-data">22/04/2025</div>
+        <div class="noticia-titulo">Estudo da LASOL aponta crescimento do uso de energia solar na região</div>
+        <div class="noticia-texto">
+          Pesquisa realizada pela LASOL mostra que o número de instalações solares residenciais cresceu 40% no último ano, impulsionado por incentivos e maior conscientização ambiental.
+        </div>
+      </div>
+      <div class="noticia">
+        <div class="noticia-data">15/04/2025</div>
+        <div class="noticia-titulo">LASOL oferece curso gratuito de instalação de painéis solares</div>
+        <div class="noticia-texto">
+          O curso, voltado para jovens e adultos, ensina na prática como instalar e manter sistemas fotovoltaicos, contribuindo para a geração de renda e inclusão social.
+        </div>
+      </div>
+      <div class="noticia">
+        <div class="noticia-data">10/04/2025</div>
+        <div class="noticia-titulo">LASOL inaugura laboratório de pesquisa em energia solar</div>
+        <div class="noticia-texto">
+          O novo laboratório permitirá o desenvolvimento de pesquisas avançadas em eficiência de painéis solares e armazenamento de energia, fortalecendo a atuação da LASOL na área.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <p class="txtrodape">COPYRIGHT ©2025, LUIS FERNANDO LIRA COELHO. TODOS OS DIREITOS RESERVADOS.</p>
+    <div class="social-logos">
+      <a href="https://github.com/LiraC2005">
+        <img class="rodape__img" src="./asset/git.png" alt="GitHub" style="background-color: gray; border-radius: 5px;">
+      </a>
+      <a href="https://br.linkedin.com/in/luis-fernando-lira-coelho-584b7b287">
+        <img class="rodape__img" src="./asset/in.png" alt="LinkedIn" style="background-color: gray; border-radius: 5px;">
+      </a>
+      <a href="https://www.instagram.com/luis.dev.eng?igsh=dnFwdzFqN3duODlo">
+        <img class="rodape__img" src="./asset/insta.png" alt="Instagram" style="background-color: gray; border-radius: 5px;">
+      </a>
+    </div>
+  </footer>
+  <script src="/NOTICIAS/script.js" type="module"></script>
+  <script src="/BACK/navbar/mobile-navbar.js"></script>
+</body>
+</html>
