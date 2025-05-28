@@ -691,12 +691,12 @@ h1 {
 {
     #btn-topo {
         box-shadow: none;
-        background: #ff9100;
+        background: transparent;
         bottom: 16px;
         right: 16px;
         width: 38px;
         height: 38px;
-        font-size: 1.75rem;
+        font-size: 2rem;
         min-width: 38px;
         min-height: 38px;
         max-width: 38px;
