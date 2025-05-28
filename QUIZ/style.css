@@ -431,14 +431,15 @@ button {
   pointer-events: auto;
 }
 
-@media (max-width: 1000px) 
-{
+@media (max-width: 1000px) {
     #btn-topo {
+        box-shadow: none;
+        background: transparent;
         bottom: 16px;
         right: 16px;
         width: 38px;
         height: 38px;
-        font-size: 1.75rem;
+        font-size: 2rem;
         min-width: 38px;
         min-height: 38px;
         max-width: 38px;
@@ -447,5 +448,10 @@ button {
         align-items: center;
         justify-content: center;
         padding: 0;
+    }
+
+    #btn-topo:hover {
+        background: transparent;
+        box-shadow: none;
     }
 }
