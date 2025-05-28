@@ -384,3 +384,13 @@ h1 {
   pointer-events: auto;
 }
 
+@media (max-width: 1000px) 
+{
+    #btn-topo {
+        bottom: 16px;
+        right: 16px;
+        width: 38px;
+        height: 38px;
+        font-size: 1.75rem;
+    }
+}
