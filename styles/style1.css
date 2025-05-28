@@ -353,6 +353,7 @@ h1 {
 
 }
 
+/* ...existing code... */
 #btn-topo {
   position: fixed;
   bottom: 32px;
@@ -370,6 +371,14 @@ h1 {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  max-width: 44px;
+  max-height: 44px;
+  padding: 0;
 }
 #btn-topo:hover {
   background: #ff9100;
@@ -377,4 +386,18 @@ h1 {
 #btn-topo.show {
   opacity: 1;
   pointer-events: auto;
+}
+
+@media (max-width: 600px) {
+  #btn-topo {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    font-size: 1.5rem;
+    right: 12px;
+    bottom: 18px;
+  }
 }
