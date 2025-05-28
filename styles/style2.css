@@ -702,7 +702,7 @@ h1 {
         display: flex;
         align-items: flex-start;
         justify-content: center;
-        padding: 5px 0 0 0;
+        padding: 0;
         overflow: hidden;
     }
     #btn-topo::after {
