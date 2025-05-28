@@ -127,5 +127,21 @@
   </footer>
   <script src="/NOTICIAS/script.js" type="module"></script>
   <script src="/BACK/navbar/mobile-navbar.js"></script>
+
+  <button id="btn-topo" title="Voltar ao topo">&#8679;</button>
+<script>
+const btnTopo = document.getElementById('btn-topo');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 200) {
+    btnTopo.classList.add('show');
+  } else {
+    btnTopo.classList.remove('show');
+  }
+});
+btnTopo.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
 </body>
 </html>

@@ -313,3 +313,29 @@ body {
   text-align: center;
   margin-top: 0px;
 }
+
+#btn-topo {
+  position: fixed;
+  bottom: 32px;
+  right: 24px;
+  z-index: 999;
+  background: #008CCC;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+#btn-topo:hover {
+  background: #ff9100;
+}
+#btn-topo.show {
+  opacity: 1;
+  pointer-events: auto;
+}
