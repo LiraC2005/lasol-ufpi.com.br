@@ -74,7 +74,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: rgb(17, 17, 81);
+    background: #01134c;
     height: 8vh;
     padding: 0 25px;
 }
