@@ -120,7 +120,7 @@ nav {
         justify-content: space-around;
         transform: scale(0);
         transition: transform;
-        background-color: rgb(17, 17, 81);
+        background-color: #01134c;
     }
 
 
