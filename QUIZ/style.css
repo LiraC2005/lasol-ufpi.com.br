@@ -445,6 +445,7 @@ button {
         max-width: 38px;
         max-height: 38px;
         display: flex;
+        color: #008CCC;
         align-items: center;
         justify-content: center;
         padding: 0;

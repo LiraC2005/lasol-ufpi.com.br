@@ -9,22 +9,23 @@
 </head>
 
 <body>
-     <header>
-    <nav>
-      <a class="logo" href="index.html"><img class="logo-img" src="/asset/LOGO.jpg" alt="logo da LASOL"></img></a>
-      <div class="mobile-menu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-      <ul class="nav-list">
-        <li><a class="aba" href="index.html" >Início</a></li>
-        <li><a class="aba" href="projetos.html">Projetos</a></li>
-        <li><a class="aba" href="ligantes.html" style="background-color: white; color: black;">Ligantes</a></li>
-        <li><a class="aba" href="seletivo.html">Seletivo</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <a class="logo" href="index.html"><img class="logo-img" src="/asset/LOGO.jpg" alt="logo da LASOL"></img></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a class="aba" href="index.html">Início</a></li>
+                <li><a class="aba" href="projetos.html">Projetos</a></li>
+                <li><a class="aba" href="ligantes.html" style="background-color: white; color: black;">Ligantes</a></li>
+                <li><a class="aba" href="seletivo.html">Seletivo</a></li>
+                <li><a class="aba" href="noticias.html">Notícias</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main class="ligantess">
         <section class="liga">
@@ -381,20 +382,20 @@
     </footer>
     <script src="/BACK/navbar/mobile-navbar.js"></script>
 
-<button id="btn-topo" title="Voltar ao topo">&#8679;</button>
-<script>
-const btnTopo = document.getElementById('btn-topo');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 200) {
-    btnTopo.classList.add('show');
-  } else {
-    btnTopo.classList.remove('show');
-  }
-});
-btnTopo.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-</script>
+    <button id="btn-topo" title="Voltar ao topo">&#8679;</button>
+    <script>
+        const btnTopo = document.getElementById('btn-topo');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                btnTopo.classList.add('show');
+            } else {
+                btnTopo.classList.remove('show');
+            }
+        });
+        btnTopo.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 
 </body>
 

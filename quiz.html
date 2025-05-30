@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,7 @@
 </head>
 
 <body>
-       <header>
+  <header>
     <nav>
       <a class="logo" href="index.html"><img class="logo-img" src="/asset/LOGO.jpg" alt="logo da LASOL"></img></a>
       <div class="mobile-menu">
@@ -24,6 +25,7 @@
         <li><a class="aba" href="ligantes.html">Ligantes</a></li>
         <li><a class="aba" href="seletivo.html">Seletivo</a></li>
         <li><a class="aba" href="quiz.html" style="background-color: white; color: black;">Quiz</a></li>
+        <li><a class="aba" href="noticias.html">Notícias</a></li>
       </ul>
     </nav>
   </header>
@@ -48,38 +50,41 @@
     </div>
   </main>
   <footer class="rodape">
-        <p class="txtrodape">COPYRIGHT ©2025, LUIS FERNANDO LIRA COELHO. TODOS OS DIREITOS RESERVADOS.</p>
-        <div class="social-logos">
-            <a href="https://github.com/LiraC2005">
-            <img class="rodape__img" src="./asset/git.png" alt="GitHub" style="background-color: gray; border-radius: 5px;">
-            </a>
-            <a href="https://br.linkedin.com/in/luis-fernando-lira-coelho-584b7b287">
-            <img class="rodape__img" src="./asset/in.png" alt="LinkedIn" style="background-color: gray; border-radius: 5px;">
-            </a>
-            <a href="https://www.instagram.com/luis.dev.eng?igsh=dnFwdzFqN3duODlo">
-            <img class="rodape__img" src="./asset/insta.png" alt="Instagram" style="background-color: gray; border-radius: 5px;">
-            </a>
-        </div>
+    <p class="txtrodape">COPYRIGHT ©2025, LUIS FERNANDO LIRA COELHO. TODOS OS DIREITOS RESERVADOS.</p>
+    <div class="social-logos">
+      <a href="https://github.com/LiraC2005">
+        <img class="rodape__img" src="./asset/git.png" alt="GitHub" style="background-color: gray; border-radius: 5px;">
+      </a>
+      <a href="https://br.linkedin.com/in/luis-fernando-lira-coelho-584b7b287">
+        <img class="rodape__img" src="./asset/in.png" alt="LinkedIn"
+          style="background-color: gray; border-radius: 5px;">
+      </a>
+      <a href="https://www.instagram.com/luis.dev.eng?igsh=dnFwdzFqN3duODlo">
+        <img class="rodape__img" src="./asset/insta.png" alt="Instagram"
+          style="background-color: gray; border-radius: 5px;">
+      </a>
+    </div>
 
-    </footer>
+  </footer>
   <script src="/QUIZ/script.js" type="module"></script>
   <script src="/BACK/navbar/mobile-navbar.js"></script>
 
   <button id="btn-topo" title="Voltar ao topo">&#8679;</button>
-<script>
-const btnTopo = document.getElementById('btn-topo');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 200) {
-    btnTopo.classList.add('show');
-  } else {
-    btnTopo.classList.remove('show');
-  }
-});
-btnTopo.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-</script>
+  <script>
+    const btnTopo = document.getElementById('btn-topo');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) {
+        btnTopo.classList.add('show');
+      } else {
+        btnTopo.classList.remove('show');
+      }
+    });
+    btnTopo.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 
 
 </body>
+
 </html>
