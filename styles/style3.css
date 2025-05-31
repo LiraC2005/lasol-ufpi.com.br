@@ -243,6 +243,11 @@ h1 {
     background-color: #f9f9f9;
 }
 
+h2 {
+    font-family: "Krona One", sans-serif;
+    color: var(--cor-primaria);
+}
+
 .seletivo h3 {
     color: var(--cor-secundaria);
     font-size: 1.5em;
