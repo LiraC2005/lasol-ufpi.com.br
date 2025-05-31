@@ -1,4 +1,5 @@
-export default [
+// Torna todas as questões também disponíveis para o modo "maratona"
+const baseQuestions = [
   {
     question: "O que é energia solar?",
     difficulty: "facil",
@@ -499,3 +500,17 @@ export default [
   // ... continue com mais questões médias e difíceis nesse padrão ...
 
 ];
+
+// Adiciona a dificuldade "maratona" a todas as questões
+const marathonQuestions = baseQuestions.map(q => ({
+  ...q,
+  difficulty: "maratona"
+}));
+
+// Exporta as questões originais + as de maratona
+const allQuestions = [
+  ...baseQuestions,
+  ...marathonQuestions
+];
+
+export default allQuestions;

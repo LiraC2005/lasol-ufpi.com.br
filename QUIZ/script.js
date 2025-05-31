@@ -80,13 +80,14 @@ function shuffle(array) {
 document.querySelectorAll(".select-difficulty button").forEach((btn) => {
   btn.onclick = (e) => {
     const level = e.target.getAttribute("data-difficulty");
-    // Filtra as questões pela dificuldade e embaralha, pegando as 10 primeiras
-    const questionsByLevel = questions.filter((q) => q.difficulty === level);
+    let questionsByLevel = questions.filter((q) => q.difficulty === level);
     if (questionsByLevel.length === 0) {
       alert("Não há perguntas para este nível.");
       return;
     }
-    filteredQuestions = shuffle([...questionsByLevel]).slice(0, 10);
+    // Para maratona, sorteia 30 questões, para os outros níveis, 10
+    const quantidade = (level === "maratona") ? 30 : 10;
+    filteredQuestions = shuffle([...questionsByLevel]).slice(0, quantidade);
     currentIndex = 0;
     questionsCorrect = 0;
     totalScore = 0;
@@ -202,3 +203,4 @@ document.querySelector('.btn-iniciar-quiz').onclick = function() {
   content.style.display = "none";
   contentFinish.style.display = "none";
 };
+
