@@ -172,6 +172,36 @@ nav {
   transition: 0.3s;
   border-radius: 10px;
 }
+.quiz-inicio{
+display: flex; 
+flex-direction: column; 
+align-items: center; 
+gap: 30px;
+padding: 20px 20px;
+color: #ffffff;
+border-radius: 10px;
+}
+
+.btn-iniciar-quiz{
+padding: 10px 24px; 
+font-size: 1.2rem; 
+border-radius: 8px; 
+background: #008CCC; 
+color: #fff; 
+border: none; 
+cursor: pointer;
+}
+
+
+.quiz-texto{
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.logo-quiz {
+  width: 200px;
+  height: auto;
+}
 
 @media (max-width: 999px) {
   body {

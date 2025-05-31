@@ -7,6 +7,12 @@ const contentFinish = document.querySelector(".finish");
 const btnRestart = document.querySelector(".finish button");
 const selectDifficulty = document.querySelector(".select-difficulty");
 
+// Tela inicial do quiz
+const quizInicio = document.querySelector('.quiz-inicio');
+selectDifficulty.style.display = "none";
+content.style.display = "none";
+contentFinish.style.display = "none";
+
 import questions from "./questions.js";
 
 let currentIndex = 0;
@@ -48,7 +54,9 @@ function stopTimer() {
 }
 
 function showDifficulty() {
-  selectDifficulty.style.display = "flex";
+  quizInicio.style.display = "flex";
+  quizInicio.style.backgroundColor = "#01134c";
+  selectDifficulty.style.display = "none";
   content.style.display = "none";
   contentFinish.style.display = "none";
   timerSpan.textContent = "";
@@ -186,3 +194,11 @@ function loadQuestion() {
 
 // Inicialização: mostra a seleção de dificuldade
 showDifficulty();
+
+// Ao clicar em "Iniciar", mostra a escolha de dificuldade
+document.querySelector('.btn-iniciar-quiz').onclick = function() {
+  quizInicio.style.display = 'none';
+  selectDifficulty.style.display = 'flex';
+  content.style.display = "none";
+  contentFinish.style.display = "none";
+};
