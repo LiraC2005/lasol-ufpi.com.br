@@ -256,6 +256,10 @@ h1 {
     margin-bottom: 1em;
 }
 
+.redes {
+  color: var(--cor-primaria);
+}
+
 
 
 .rodape {
@@ -322,6 +326,11 @@ h1 {
 }
 @media (max-width: 1370px){
     .redes__nome {
+        display: none;
+    }
+}
+@media (min-width: 1370px){
+    .redes__img {
         display: none;
     }
 }
