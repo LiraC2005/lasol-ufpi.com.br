@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-    --cor-primaria: #00222a;
-    --cor-secundaria: #ff9100;
-    --cor-terciaria: #ffffff;
+  --cor-primaria: #00222a;
+  --cor-secundaria: #ff9100;
+  --cor-terciaria: #ffffff;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -29,9 +29,7 @@ header {
   /* Colocando o cabeçalho acima de outros elementos */
   width: 100%;
   /* Largura total */
-
 }
-
 
 .logo-img {
   /* Estilizando a imagem do logo */
@@ -41,7 +39,7 @@ header {
   /* Altura automática para manter a proporção */
   margin: 0.2em 1em 0 0;
   /* Margem horizontal */
-  border-radius: 5px
+  border-radius: 5px;
 }
 
 .menu {
@@ -49,21 +47,19 @@ header {
   display: flex;
 }
 
-
-
 .aba {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 0px 10px 0px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0px 10px 0px 10px;
 }
 
 .aba:hover {
-    color: #000000;
-    border-radius: 5px;
-    background-color: aliceblue;
-    transition: 0.3s;
+  color: #000000;
+  border-radius: 5px;
+  background-color: aliceblue;
+  transition: 0.3s;
 }
 
 nav {
@@ -73,7 +69,7 @@ nav {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   background: #01134c;
   height: 8vh;
-  padding: 0 25px;  
+  padding: 0 25px;
 }
 
 .nav-list {
@@ -117,9 +113,8 @@ nav {
     justify-content: space-around;
     transform: scale(0);
     transition: transform;
-    background-color: #01134c ;
+    background-color: #01134c;
   }
-
 
   .nav-list li {
     margin-left: 0;
@@ -160,215 +155,209 @@ nav {
 }
 
 body {
-    box-sizing: border-box;
-    /* height: 100vh; */
-    background-color: var(--cor-secundaria);
-    color: var(--cor-primaria);
+  box-sizing: border-box;
+  /* height: 100vh; */
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
 }
 
 strong {
-    color: #000000;
+  color: #000000;
 }
 
 h1 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .titulo02 {
-    color: blue;
-    padding: 10px;
+  color: blue;
+  padding: 10px;
 }
 
 .Pai {
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10%;
-    gap: 80px;
-    
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10%;
+  gap: 80px;
 }
 
 .filho01 {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .titulo01 {
-    font-size: 1.5rem;
-    font-family: "Krona One", sans-serif;
-    text-align: center;
+  font-size: 1.5rem;
+  font-family: "Krona One", sans-serif;
+  text-align: center;
 }
 
 .Paragrafo {
-    font-size: 1rem;
-    font-family: "Montserrat", sans-serif;
-    color: black;
-    text-align: justify;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  text-align: justify;
 }
 
 .redes__nome {
-    font-size: 1.5rem;
-    font-family: "Krona One", sans-serif;
-    color: #ffffff;
+  font-size: 1.5rem;
+  font-family: "Krona One", sans-serif;
+  color: #ffffff;
 }
 
 .botoes {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .botao {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    font-size: 1.5rem;
-    background-color: var(--cor-primaria);
-    width: 40%;
-    text-align: center;
-    border-radius: 20px;
-    padding: 21.5px 0;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600px;
-    border: #00222a 4px solid;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 1.5rem;
+  background-color: var(--cor-primaria);
+  width: 35%;
+  text-align: center;
+  border-radius: 20px;
+  padding: 21.5px 0;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600px;
+  border: #00222a 4px solid;
 }
 
 .botao:hover {
-    /* background-color: #00222a; */
-    color: rgb(255, 255, 255);
-    transition: 0.5s;
-    border-radius: 5px;
+  /* background-color: #00222a; */
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+  border-radius: 5px;
 }
 
 .redes {
-    font-size: 1.25rem;
-    font-family: "Krona One", sans-serif;
-    color: rgb(2, 2, 110);
-    text-align: center;
-    margin-bottom: 1em;
+  font-size: 1.25rem;
+  font-family: "Krona One", sans-serif;
+  color: rgb(2, 2, 110);
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 .redes {
   color: var(--cor-primaria);
 }
 
-
-
 .rodape {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-direction: column;
-    font-size: 1.5rem;
-    font-family: "Krona One", sans-serif;
-    color: #00222a;
-    text-align: center;
-    padding: 8em 1em 1em 1em;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-family: "Krona One", sans-serif;
+  color: #00222a;
+  text-align: center;
+  padding: 8em 1em 1em 1em;
 }
 
 .ligantes {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 8%;
-    gap: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8%;
+  gap: 80px;
 }
 
 .liga {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .fotoligantes {
-    width: 50%;
+  width: 50%;
 }
 
 .logo {
-    width: 50%;
-    border-radius: 50px;
+  width: 50%;
+  border-radius: 50px;
 }
 
 .dir {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-    padding: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 5%;
 }
 
 .txtrodape {
-    font-size: 0.7rem;
+  font-size: 0.7rem;
 }
 
 .social-logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .rodape__img {
-    width: 1em;
-    height: 1em;
+  width: 1em;
+  height: 1em;
 }
-@media (max-width: 1370px){
-    .redes__nome {
-        display: none;
-    }
+@media (max-width: 1370px) {
+  .redes__nome {
+    display: none;
+  }
 }
-@media (min-width: 1370px){
-    .redes__img {
-        display: none;
-    }
+@media (min-width: 1370px) {
+  .redes__img {
+    display: none;
+  }
 }
 @media (max-width: 1000px) {
-    .Pai {
-        flex-direction: column-reverse;
-        padding: 5%;
-        margin-top: 4rem;
-    }
+  .Pai {
+    flex-direction: column-reverse;
+    padding: 5%;
+    margin-top: 4rem;
+  }
 
-    .logo {
-        width: 100%;
-    }
+  .logo {
+    width: 100%;
+  }
 
-    .filho01 {
-        width: auto;
-    }
+  .filho01 {
+    width: auto;
+  }
 
-    .botao {
-        font-size: 1.25rem;
-    }
+  .botao {
+    font-size: 1.25rem;
+  }
 
-    .Paragrafo {
-     text-align: justify;
-    }	
+  .Paragrafo {
+    text-align: justify;
+  }
 
-    .redes__nome {
-        display: none;
-    }
+  .redes__nome {
+    display: none;
+  }
 
-    .txtrodape {
-        font-size: 0.5rem;
-    }
+  .txtrodape {
+    font-size: 0.5rem;
+  }
 
-    .rodape {
-        font-size: 1.25rem;
-    }
-
+  .rodape {
+    font-size: 1.25rem;
+  }
 }
 /* ...existing code... */
 #btn-topo {
@@ -376,7 +365,7 @@ h1 {
   bottom: 32px;
   right: 24px;
   z-index: 999;
-  background: #008CCC;
+  background: #008ccc;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -384,7 +373,7 @@ h1 {
   height: 44px;
   font-size: 2rem;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s;
@@ -401,27 +390,27 @@ h1 {
   pointer-events: auto;
 }
 @media (max-width: 1000px) {
-    #btn-topo {
-        box-shadow: none;
-        background: transparent;
-        bottom: 16px;
-        right: 16px;
-        width: 38px;
-        height: 38px;
-        font-size: 2rem;
-        min-width: 38px;
-        min-height: 38px;
-        max-width: 38px;
-        max-height: 38px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        color: #008CCC;
-    }
+  #btn-topo {
+    box-shadow: none;
+    background: transparent;
+    bottom: 16px;
+    right: 16px;
+    width: 38px;
+    height: 38px;
+    font-size: 2rem;
+    min-width: 38px;
+    min-height: 38px;
+    max-width: 38px;
+    max-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    color: #008ccc;
+  }
 
-    #btn-topo:hover {
-        background: transparent;
-        box-shadow: none;
-    }
+  #btn-topo:hover {
+    background: transparent;
+    box-shadow: none;
+  }
 }
