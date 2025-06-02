@@ -480,7 +480,7 @@ h1 {
 .apostilas__texto {
   display: flex;
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #00222a;
   text-align: justify;
   align-items: center;
