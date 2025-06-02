@@ -290,7 +290,7 @@ h1 {
   font-weight: 700;
   font-size: 50px;
   padding: 0.5em 0 0.5em 0;
-  margin: 0.25em 0;
+  margin: 0.5em 0.5em;
   border-radius: 8px;
   font-family: "Krona One", sans-serif;
 }
@@ -625,7 +625,7 @@ a {
     font-size: 1.5rem;
     color: #00222a;
     text-align: center;
-    margin: 0.5em 0;
+    margin: 0.5em 0.5em;
     padding: 0.25em;
   }
 
