@@ -140,6 +140,17 @@ nav {
     overflow-x: hidden;
   }
 
+  .cabecalho__ligantes {
+    transform: scale(1);
+  }
+
+  .aba__ligantes {
+    padding: 5px;
+    font-size: 12px;
+    width: 120%;
+    max-width: 200px;
+  }
+
   .nav-list {
     position: absolute;
     top: 8vh;
