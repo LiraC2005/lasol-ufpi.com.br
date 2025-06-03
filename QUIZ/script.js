@@ -38,15 +38,29 @@ pointsSpan.style.marginBottom = "10px";
 pointsSpan.style.display = "block";
 content.insertBefore(pointsSpan, timerSpan.nextSibling);
 
+let tempoLimite = 0; // em segundos
+let tempoRestante = 0;
+
 function startTimer() {
-  seconds = 0;
-  timerSpan.textContent = "Tempo: 0s";
+  tempoRestante = tempoLimite;
+  updateTimerDisplay();
   totalScore = 0;
   pointsSpan.textContent = `Pontos: ${totalScore}`;
   timerInterval = setInterval(() => {
-    seconds++;
-    timerSpan.textContent = `Tempo: ${seconds}s`;
+    tempoRestante--;
+    updateTimerDisplay();
+    if (tempoRestante <= 0) {
+      stopTimer();
+      finishTimeout();
+    }
   }, 1000);
+}
+
+// Função auxiliar para exibir minutos e segundos
+function updateTimerDisplay() {
+  const min = Math.floor(tempoRestante / 60);
+  const sec = tempoRestante % 60;
+  timerSpan.textContent = `Tempo restante: ${min}min ${sec}s`;
 }
 
 function stopTimer() {
@@ -77,6 +91,13 @@ function shuffle(array) {
   return array;
 }
 
+function finishTimeout() {
+  pointsSpan.textContent = "";
+  textFinish.innerHTML = `Tempo esgotado!<br>Você acertou ${questionsCorrect} de ${filteredQuestions.length}<br>Pontuação: ${totalScore}`;
+  content.style.display = "none";
+  contentFinish.style.display = "flex";
+}
+
 document.querySelectorAll(".select-difficulty button").forEach((btn) => {
   btn.onclick = (e) => {
     const level = e.target.getAttribute("data-difficulty");
@@ -91,6 +112,14 @@ document.querySelectorAll(".select-difficulty button").forEach((btn) => {
     currentIndex = 0;
     questionsCorrect = 0;
     totalScore = 0;
+
+    // Define o tempo limite por dificuldade
+    if (level === "facil") tempoLimite = 120;         // 2 minutos
+    else if (level === "medio") tempoLimite = 180;    // 3 minutos
+    else if (level === "dificil") tempoLimite = 240;  // 4 minutos
+    else if (level === "maratona") tempoLimite = 600; // 10 minutos
+    else tempoLimite = 0; // sem limite
+
     hideDifficulty();
     startTimer();
     loadQuestion();
@@ -112,10 +141,22 @@ function nextQuestion(e) {
 
   // Pontuação: quanto mais rápido, mais pontos (máx 100, mínimo 10)
   let score = Math.max(100 - timeSpent * 1, 10);
+
+  // Se for maratona, cada questão vale 1/3 dos pontos
+  const level = filteredQuestions[0]?.difficulty;
+  if (level === "maratona") {
+    score = Math.floor(score / 3);
+    if (score < 3) score = 3; // mínimo de 3 pontos por questão
+  }
+
   let pontosAntes = totalScore;
   if (isCorrect) {
     questionsCorrect++;
     totalScore += score;
+    // Limita a pontuação máxima em 1000 para maratona
+    if (level === "maratona" && totalScore > 1000) {
+      totalScore = 1000;
+    }
   }
   // Mostra "+" se os pontos aumentarem
   if (totalScore > pontosAntes) {
@@ -150,7 +191,7 @@ function nextQuestion(e) {
 function finish() {
   stopTimer();
   pointsSpan.textContent = "";
-  textFinish.innerHTML = `você acertou ${questionsCorrect} de ${filteredQuestions.length}<br>Tempo: ${seconds}s<br>Pontuação: ${totalScore}`;
+  textFinish.innerHTML = `você acertou ${questionsCorrect} de ${filteredQuestions.length}<br>Pontuação: ${totalScore}`;
   content.style.display = "none";
   contentFinish.style.display = "flex";
 }
