@@ -190,8 +190,9 @@ function nextQuestion(e) {
 
 function finish() {
   stopTimer();
+
   pointsSpan.textContent = "";
-  textFinish.innerHTML = `você acertou ${questionsCorrect} de ${filteredQuestions.length}<br>Pontuação: ${totalScore}`;
+  textFinish.innerHTML = `${timerSpan.textContent}<br>você acertou ${questionsCorrect} de ${filteredQuestions.length}<br>Pontuação: ${totalScore}`;
   content.style.display = "none";
   contentFinish.style.display = "flex";
 }
