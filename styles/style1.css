@@ -512,6 +512,7 @@ a {
   border-radius: 10px;
   text-decoration: none;
   margin: 0.75em 0 0 0;
+  cursor: pointer;
 }
 
 @media (max-width: 1000px) {
