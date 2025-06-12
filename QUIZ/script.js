@@ -165,15 +165,22 @@ function nextQuestion(e) {
     pointsSpan.textContent = `Pontos: ${totalScore}`;
   }
 
-  // Marca todos os botões: verde para corretos, vermelho para errados
+  // Desabilita todos os botões
   document.querySelectorAll(".answer").forEach((b) => {
     b.disabled = true;
-    if (b.getAttribute("data-correct") === "true") {
-      b.classList.add("btn-correct");
-    } else {
-      b.classList.add("btn-wrong");
-    }
   });
+
+  // Adiciona cor apenas no botão clicado e no correto (se não for o mesmo)
+  if (isCorrect) {
+    btn.classList.add("btn-correct");
+  } else {
+    btn.classList.add("btn-wrong");
+    // Destaca o correto
+    const correctBtn = Array.from(document.querySelectorAll(".answer")).find(
+      (b) => b.getAttribute("data-correct") === "true"
+    );
+    if (correctBtn) correctBtn.classList.add("btn-correct");
+  }
 
   setTimeout(() => {
     document.querySelectorAll(".answer").forEach((b) => {
@@ -239,7 +246,7 @@ function loadQuestion() {
 showDifficulty();
 
 // Ao clicar em "Iniciar", mostra a escolha de dificuldade
-document.querySelector('.btn-iniciar-quiz').onclick = function() {
+document.querySelector('.btn-iniciar-quiz').onclick = function () {
   quizInicio.style.display = 'none';
   selectDifficulty.style.display = 'flex';
   content.style.display = "none";
