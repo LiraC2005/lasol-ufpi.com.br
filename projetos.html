@@ -2,207 +2,366 @@
 <html lang="pt-br">
 
 <head>
+  <!-- Estilos externos -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles/style1.css" />
+
+  <!-- Meta tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projetos LASOL</title>
 </head>
 
 <body>
+  <!-- CABEÇALHO COM NAVEGAÇÃO -->
   <header>
     <nav>
-      <a class="logo" href="index.html"><img class="logo-img" src="/asset/LOGO.jpg" alt="logo da LASOL" /></a>
+      <!-- Logo -->
+      <a href="index.html"><img class="logo-img" src="/asset/Ver.svg" alt="logo da LASOL"></img></a>
+
+      <!-- Menu mobile (hamburger) -->
       <div class="mobile-menu">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
       </div>
+
+      <!-- Menu de navegação -->
       <ul class="nav-list">
         <li><a class="aba" href="index.html">Início</a></li>
-        <li>
-          <a class="aba" href="projetos.html" style="background-color: white; color: black">Projetos</a>
-        </li>
+        <li><a class="aba" href="projetos.html" style="padding-bottom: 10px;">Projetos</a></li>
         <li><a class="aba" href="ligantes.html">Ligantes</a></li>
         <li><a class="aba" href="seletivo.html">Seletivo</a></li>
-        <li><a class="aba" href="quiz.html">Quiz</a></li>
         <li><a class="aba" href="noticias.html">Notícias</a></li>
       </ul>
     </nav>
   </header>
-  <main class="Pai">
-    <section class="filho01">
-      <h1 class="titulo01">
-        Projetos da <strong class="titulo02">LASOL</strong>
-      </h1>
-      <p class="Paragrafo">
-        Os projetos realizados pela LASOL (Liga Acadêmica de Energia Solar
-        Fotovoltaica) são fruto do comprometimento e da colaboração entre seus
-        membros e parceiros. Esses projetos têm como foco principal a
-        pesquisa, inovação e desenvolvimento de tecnologias voltadas para a
-        energia solar fotovoltaica, promovendo soluções sustentáveis e
-        contribuindo para o avanço dessa importante área no cenário
-        energético.
-      </p>
+
+  <!-- SEÇÃO PRINCIPAL - INTRODUÇÃO AOS PROJETOS -->
+  <main class="inicio">
+    <section class="inicio__container">
+      <p class="Paragrafo1">Os projetos realizados pela LASOL (Liga Acadêmica de Energia Solar Fotovoltaica) são fruto
+        do comprometimento e da colaboração entre seus membros e parceiros. Esses projetos têm como foco principal a
+        pesquisa, inovação e desenvolvimento de tecnologias voltadas para a energia solar fotovoltaica, promovendo
+        soluções sustentáveis e contribuindo para o avanço dessa importante área no cenário energético.</p>
     </section>
-    <img src="asset/Agua-Energia-Solar-Capa.png" alt="foto setaosol" class="logo" />
+
+    <!-- Container da imagem principal -->
+    <div class="inicio__imagem-container">
+      <img src="asset/Bombeo-Solar.jpg" alt="Sistema de Bombeamento Solar" class="inicio__imagem">
+    </div>
   </main>
-  <div class="cabecalho__ligantes" style="background-color: #ff9100">
-    <nav class="menu__ligantes">
-      <a class="aba__ligantes" href="#apostilas">Apostilas</a>
-      <a class="aba__ligantes" href="#Ações anuais">Ações anuais</a>
-    </nav>
-  </div>
-  <main class="apostilas">
-    <section class="apostilas__container">
-      <h1 class="apostilas__titulo" id="apostilas">Apostilas da LASOL</h1>
-      <div class="apostilas__cards">
-        <div class="apostilas__card apostilas__card--1">
-          <h2 class="apostilas__nome">Inglês científico</h2>
-          <img src="asset/apostila1.png" alt="Apostila 1" class="apostilas__img" />
-          <p class="apostilas__texto">
-            A apostila de Inglês Científico da LASOL é um material educativo
-            voltado para estudantes e profissionais que desejam aprimorar suas
-            habilidades no idioma, especialmente no contexto acadêmico e
-            científico. Com uma abordagem estruturada, o conteúdo inclui
-            terminologias técnicas, estratégias de leitura e compreensão de
-            artigos científicos, além de exercícios práticos para reforçar o
-            aprendizado. O material é ideal para quem busca dominar a
-            linguagem especializada em diversas áreas do conhecimento.
-          </p>
-          <button class="apostilas__botao">
-            <a href="https://drive.google.com/file/d/16MmNHDzLRzn9hFV14ksA4qiY0FtUcR6N/view?usp=drive_link">Baixe
-              aqui</a>
-          </button>
+
+  <!-- SEÇÃO ESCOLAS SOLARES -->
+  <main class="escola">
+    <section class="acoesanuais__container" style="width: 100%;">
+      <h1 class="Paragrafo2">
+        Projetos LASOL</h1>
+    </section>
+
+    <section class="escola__container">
+      <h1 class="titulo2">
+        Escolas Solares</h1>
+      <p class="escolaParagrafo">Iniciativa que visa promover o conhecimento sobre energia solar para alunos do ensino
+        fundamental II e do ensino médio.</p>
+    </section>
+
+    <!-- Carrossel das Escolas Solares -->
+    <div style="width: 100%;" class="swiper swiperescolas">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="asset/escolas_solares/esc1.svg" alt="Projeto Escolas Solares - Slide 1" />
         </div>
-        <div class="apostilas__card apostilas__card--2">
-          <h2 class="apostilas__nome">Conhecimentos básicos</h2>
-          <img src="asset/apostila2.png" alt="Apostila 2" class="apostilas__img" />
-          <p class="apostilas__texto">
-            A apostila de Conhecimentos Básicos de Energia Solar é um material
-            educativo que introduz os fundamentos da energia fotovoltaica. Ela
-            aborda conceitos essenciais como funcionamento dos painéis
-            solares, princípios da geração de energia limpa e sustentável,
-            além de aplicações práticas dessa tecnologia. O conteúdo também
-            pode incluir tópicos sobre instalação, manutenção e benefícios
-            ambientais da energia solar, tornando-se um excelente recurso para
-            quem deseja ingressar nesse setor promissor.
-          </p>
-          <button class="apostilas__botao">
-            <a href="https://drive.google.com/file/d/1P4tai0PdEeYQIcwR2B28BiR5LlNYvd2W/view?usp=drive_link">Baixe
-              aqui</a>
-          </button>
+        <div class="swiper-slide">
+          <img src="asset/escolas_solares/esc2.svg" alt="Projeto Escolas Solares - Slide 2" />
+        </div>
+
+      </div>
+      <!-- Paginação do carrossel -->
+      <div class="swiper-pagination swiper-paginationescolas"></div>
+    </div>
+
+    <section class="escola__container">
+      <h1 class="titulo2">
+        Canindé Solar</h1>
+      <p class="escolaParagrafo">O projeto Canindé Solar consiste em um projeto de instalação de sistemas de
+        bombeamento em comunidades isoladas. O projeto está presente em mais de 10 cidades ao longo de todo o
+        estado do Piauí.</p>
+    </section>
+
+    <!-- Carrossel das Escolas Solares -->
+    <div style="width: 100%;" class="swiper swiperescolas">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="asset/caninde/can2.svg" alt="Projeto Canindé Solar - Slide 1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/caninde/can3.svg" alt="Projeto Canindé Solar - Slide 2" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/caninde/can4.svg" alt="Projeto Canindé Solar - Slide 3" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/caninde/can5.svg" alt="Projeto Canindé Solar - Slide 4" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/caninde/can6.svg" alt="Projeto Canindé Solar - Slide 4" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/caninde/can7.svg" alt="Projeto Canindé Solar - Slide 4" />
         </div>
       </div>
-    </section>
-  </main>
-  <main class="mae">
-    <div class="caixa">
-      <section class="carrossel">
-        <div class="container__carrossel">
-          <h1 class="carrossel__titulo" id="Ações anuais">
-            Ações da LASOL em 2024
-          </h1>
-        </div>
-        <!-- Slider main container -->
-        <div class="swiper swiper2024">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="asset/proj1.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="asset/proj2.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="asset/proj3.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="asset/proj.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="asset/proj5.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="asset/proj6.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="asset/proj7.JPG" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="asset/proj8.jpg" alt="SERTÃOSOL" /><a href=""></a>
-            </div>
-            <div class="swiper-slide">
-              <img src="asset/proj9.jpg" alt="FECOPAF" />
-            </div>
-            <div class="swiper-slide">
-              <img src="asset/proj10.jpg" alt="minicursos" />
-            </div>
-            <div class="swiper-slide">
-              <img src="asset/proj11.jpg" alt="Curso de inglês" />
-            </div>
-            <div class="swiper-slide">
-              <img src="asset/proj12.jpg" alt="Workshop" />
-            </div>
-            <div class="swiper-slide">
-              <img src="asset/proj13.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="asset/proj14.jpg" alt="Capacitações" />
-            </div>
-            <div class="swiper-slide">
-              <img src="asset/proj15.jpg" alt="visitas Técnicas" />
-            </div>
-          </div>
-          <div class="swiper-pagination swiper-pagination2024"></div>
-          <div class="swiper-button-prev swiper-button-prev2024"></div>
-          <div class="swiper-button-next swiper-button-next2024"></div>
-        </div>
-      </section>
+      <!-- Paginação do carrossel -->
+      <div class="swiper-pagination swiper-paginationescolas"></div>
+    </div>
 
-      <section>
-        <div>
-          <section class="carrossel">
-            <div class="container__carrossel">
-              <h1 class="carrossel__titulo">2025...</h1>
-            </div>
-            <div class="swiper swiper2025">
-              <div class="swiper-wrapper">
-                <!-- Slides futuros -->
-              </div>
-              <div class="swiper-pagination swiper-pagination2025"></div>
-              <div class="swiper-button-prev swiper-button-prev2025"></div>
-              <div class="swiper-button-next swiper-button-next2025"></div>
-              <div class="swiper-scrollbar swiper-scrollbar2025"></div>
-            </div>
-          </section>
+    <section class="escola__container">
+      <h1 class="titulo2">
+        SerTãoSol</h1>
+      <p class="escolaParagrafo">Uma iniciativa de extenção da Universidade Federal do Piauí, cujo objetivo é
+        levar energia solar para comunidades necessitadas envolvidas na agricultura familiar sendo realizada por
+        meio de parcerias com empresas privadas e campanhas de captação de recursos.<a
+          href="https://www.sertaosol.com.br/in%C3%ADcio" style=" color: #00335b; margin-left: 10px;">Saiba
+          mais sobre o projeto</a></p>
+
+    </section>
+
+    <!-- Carrossel das Escolas Solares -->
+    <div style="width: 100%;" class="swiper swiperescolas">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="asset/Sertaosol/ser0.svg" alt="Projeto SerTãoSol - Slide 0" />
         </div>
-      </section>
+        <div class="swiper-slide">
+          <img src="asset/Sertaosol/ser1.svg" alt="Projeto SerTãoSol - Slide 1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/Sertaosol/ser2.svg" alt="Projeto SerTãoSol - Slide 2" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/Sertaosol/ser3.svg" alt="Projeto SerTãoSol - Slide 3" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/Sertaosol/ser4.svg" alt="Projeto SerTãoSol - Slide 4" />
+        </div>
+      </div>
+      <!-- Paginação do carrossel -->
+      <div class="swiper-pagination swiper-paginationescolas"></div>
+    </div>
+
+
+  </main>
+
+  <!-- SEÇÃO QUIZ SOLAR -->
+  <main class="quiz">
+    <section class="quiz__container">
+      <h1 class="Paragrafo3" style="font-size: larger; font-weight: 700; text-align: left; margin-bottom: 10px;">
+        QUIZ SOLAR</h1>
+      <p class="Paragrafo3">Aplicativo desenvolvido pelos membros para melhorar o aprendizado dos alunos durante o
+        desenvolvimento do projeto Escolas Solares.</p>
+
+      <!-- Link para o aplicativo Quiz -->
+      <a href="https://www.canva.com/design/DAGHh_kSQBg/gMMLXDyMbg3zWf7z6zfGDw/view?utm_content=DAGHh_kSQBg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h375b95400a"
+        class="botao__logo">
+        <p class="portifolio">VER APP</p>
+      </a>
+    </section>
+
+    <!-- Imagem do Quiz -->
+    <div class="caixa2">
+      <img src="./asset/projetos/QUIZ.svg" alt="QUIZ" class="quiz-img">
     </div>
   </main>
-  <footer class="rodape">
-    <p class="txtrodape">
-      COPYRIGHT ©2025, LUIS FERNANDO LIRA COELHO. TODOS OS DIREITOS
-      RESERVADOS.
-    </p>
-    <div class="social-logos">
-      <a href="https://github.com/LiraC2005">
-        <img class="rodape__img" src="./asset/git.png" alt="GitHub"
-          style="background-color: gray; border-radius: 5px" />
-      </a>
-      <a href="https://br.linkedin.com/in/luis-fernando-lira-coelho-584b7b287">
-        <img class="rodape__img" src="./asset/in.png" alt="LinkedIn"
-          style="background-color: gray; border-radius: 5px" />
-      </a>
-      <a href="https://www.instagram.com/luis.dev.eng?igsh=dnFwdzFqN3duODlo">
-        <img class="rodape__img" src="./asset/insta.png" alt="Instagram"
-          style="background-color: gray; border-radius: 5px" />
-      </a>
+
+  <!-- SEÇÃO QUIZ WEB INTERATIVO -->
+  <main class="quizweb">
+    <section class="quizweb__container">
+      <h1 class="Paragrafo4" style=" font-weight: 700; text-align: left;">
+        Vamos jogar?</h1>
+    </section>
+
+    <div class="quiz-content">
+      <!-- Tela inicial do quiz -->
+      <div class="quiz-inicio">
+        <img src="img/quiz_solar.png" class="logo-quiz" alt="Logo Quiz Solar">
+        <p class="quiz-texto">Teste seus conhecimentos sobre energia solar e desafie-se em diferentes níveis de
+          dificuldade.</p>
+        <button class="btn-iniciar-quiz">VAMOS COMEÇAR</button>
+      </div>
+
+      <!-- Seleção de dificuldade (oculta inicialmente) -->
+      <div class="select-difficulty" style="display: none;">
+        <h3>Escolha o nível de dificuldade:</h3>
+        <button data-difficulty="facil">Fácil</button>
+        <button data-difficulty="medio">Médio</button>
+        <button data-difficulty="dificil">Difícil</button>
+        <button data-difficulty="maratona">Maratona</button>
+      </div>
+
+      <!-- Conteúdo das questões -->
+      <div class="content">
+        <span class="spnQtd"></span>
+        <span class="question"></span>
+        <div class="answers"></div>
+      </div>
+
+      <!-- Tela de finalização -->
+      <div class="finish">
+        <span></span>
+        <button>Reiniciar</button>
+      </div>
     </div>
+  </main>
+
+  <!-- SEÇÃO APOSTILAS -->
+  <main class="apostilas">
+    <div class="apostilasUp">
+      <section class="apostilaUp_container">
+        <h2 class="apostilaUpTitle">
+          <span class="iconeDownload">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0e5083" viewBox="0 0 24 24">
+              <path d="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59z" />
+              <path
+                d="M19 3H5c-1.1 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" />
+            </svg>
+          </span>
+          E-book
+        </h2>
+
+
+        <p class="apostilaUpParagraph">Tendo como um dos pilares o ENSINO, a LASOL desenvolveu apostilas para guiar os
+          membros e fornecer comunidade externa um fonte de informações confiável e acessível. </p>
+      </section>
+    </div>
+    <div class="apostilas__container">
+
+      <div class="apostilasDown">
+        <div class="apostilaCard">
+          <div class="apCardImg"><img src="./asset/apostila1.png" alt=""></div>
+          <div>
+            <p class="apostilaText">A apostila de Conhecimentos Básicos de Energia Solar é um material educativo que
+              introduz os fundamentos da energia fotovoltaica. Ela aborda conceitos essenciais como funcionamento dos
+              painéis solares, princípios da geração de energia limpa e sustentável, além de aplicações práticas dessa
+              tecnologia.</p>
+            <a href="https://drive.google.com/file/d/1P4tai0PdEeYQIcwR2B28BiR5LlNYvd2W/view?usp=drive_link"
+              target="_blank" class="botao__logo botao_card">
+              <p class="portifolio">BAIXE AGORA</p>
+            </a>
+          </div>
+        </div>
+        <div class="apostilaCard">
+          <div class="apCardImg"><img src="./asset/apostila2.png" alt=""></div>
+          <div>
+            <p class="apostilaText">A apostila de Inglês Científico da LASOL é um material educativo voltado para
+              estudantes e profissionais que desejam aprimorar suas habilidades no idioma, especialmente no contexto
+              acadêmico e científico.</p>
+            <a href="https://drive.google.com/file/d/16MmNHDzLRzn9hFV14ksA4qiY0FtUcR6N/view?usp=drive_link"
+              target="_blank" class="botao__logo botao_card">
+              <p class="portifolio">BAIXE AGORA</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- SEÇÃO CARROSSEL DE AÇÕES ANUAIS -->
+
+  <main class="acoesanuais">
+    <section class="acoesanuais__container">
+      <h1 class="Paragrafo2">
+        Ações Anuais LASOL 2024</h1>
+    </section>
+
+    <!-- Carrossel das Escolas Solares -->
+    <div style="width: 100% !important;" class="swiper swiperano">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="asset/projetos/proj.jpg" alt="Projeto Escolas Solares - Slide 1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/projetos/proj1.jpg" alt="Projeto Escolas Solares - Slide 2" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/projetos/proj2.jpg" alt="Projeto Escolas Solares - Slide 3" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/projetos/proj3.jpg" alt="Projeto Escolas Solares - Slide 4" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/projetos/proj5.jpg" alt="Projeto Escolas Solares - Slide 5" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/projetos/proj6.jpg" alt="Projeto Escolas Solares - Slide 6" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/projetos/proj7.jpg" alt="Projeto Escolas Solares - Slide 7" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/projetos/proj8.jpg" alt="Projeto Escolas Solares - Slide 8" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/projetos/proj9.jpg" alt="Projeto Escolas Solares - Slide 9" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/projetos/proj10.jpg" alt="Projeto Escolas Solares - Slide 10" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/projetos/proj11.jpg" alt="Projeto Escolas Solares - Slide 11" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/projetos/proj12.jpg" alt="Projeto Escolas Solares - Slide 12" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/projetos/proj13.jpg" alt="Projeto Escolas Solares - Slide 13" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/projetos/proj14.jpg" alt="Projeto Escolas Solares - Slide 14" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/projetos/proj15.jpg" alt="Projeto Escolas Solares - Slide 15" />
+        </div>
+      </div>
+      <!-- Paginação do carrossel -->
+      <div class="swiper-pagination swiper-paginationescolas"></div>
+    </div>
+  </main>
+
+  <!-- RODAPÉ -->
+
+  <footer class="rodape">
+    <p class="txtrodape">COPYRIGHT ©2025, EQUIPE LASOL. TODOS OS DIREITOS RESERVADOS.</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
+    // Carrossel escolas
+    new Swiper(".swiperescolas", {
+      spaceBetween: 10,
+      slidesPerView: 1,
+      loop: true,
+      autoplay: {
+        delay: 9500,
+        disableOnInteraction: false,
+      },
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-paginationescolas",
+        clickable: true,
+      },
+      breakpoints: {
+        1000: {
+          slidesPerView: 2,
+          slidesPerGroup: 2, // aqui pula de 2 em 2
+          spaceBetween: 10,
+        },
+
+      },
+    });
+
     // Carrossel 2024
-    new Swiper(".swiper2024", {
+    new Swiper(".swiperano", {
       spaceBetween: 10,
       slidesPerView: 1,
       loop: true,
@@ -214,72 +373,48 @@
         enabled: true,
       },
       navigation: {
-        nextEl: ".swiper-button-next2024",
-        prevEl: ".swiper-button-prev2024",
+        nextEl: ".swiper-button-nextano",
+        prevEl: ".swiper-button-prevano",
       },
       pagination: {
-        el: ".swiper-pagination2024",
+        el: ".swiper-paginationescolas",
         clickable: true,
       },
       scrollbar: {
-        el: ".swiper-scrollbar2024",
+        el: ".swiper-scrollbarano",
         draggable: true,
       },
       breakpoints: {
         1000: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 10,
         },
       },
     });
 
-    // Carrossel 2025
-    new Swiper(".swiper2025", {
-      spaceBetween: 10,
-      slidesPerView: 1,
-      loop: true,
-      autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-      },
-      keyboard: {
-        enabled: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next2025",
-        prevEl: ".swiper-button-prev2025",
-      },
-      pagination: {
-        el: ".swiper-pagination2025",
-        clickable: true,
-      },
-      scrollbar: {
-        el: ".swiper-scrollbar2025",
-        draggable: true,
-      },
-      breakpoints: {
-        1000: {
-          slidesPerView: 3,
-          spaceBetween: 10,
-        },
-      },
-    });
   </script>
 
-  <button id="btn-topo" title="Voltar ao topo">&#8679;</button>
+  <button id="btn-topo" title="Voltar ao topo">
+    <img src="./asset/sua-imagem-seta.svg" alt="Voltar ao topo">
+  </button>
+
+  <script src="/BACK/navbar/mobile-navbar.js"></script>
   <script>
-    const btnTopo = document.getElementById("btn-topo");
-    window.addEventListener("scroll", () => {
+    const btnTopo = document.getElementById('btn-topo');
+    window.addEventListener('scroll', () => {
       if (window.scrollY > 200) {
-        btnTopo.classList.add("show");
+        btnTopo.classList.add('show');
       } else {
-        btnTopo.classList.remove("show");
+        btnTopo.classList.remove('show');
       }
     });
-    btnTopo.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+    btnTopo.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
+
+  <!-- Scripts do Quiz -->
+  <script src="/QUIZ/script.js" type="module"></script>
 
   <script src="/BACK/navbar/mobile-navbar.js"></script>
 </body>

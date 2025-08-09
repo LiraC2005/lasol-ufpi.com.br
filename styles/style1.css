@@ -1,104 +1,77 @@
-@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/*
+===========================================
+FOLHA DE ESTILOS - PROJETOS LASOL
+===========================================
+Descrição: Estilos para a página de projetos da Liga Acadêmica de Energia Solar Fotovoltaica
+Autor: Equipe LASOL
+Data: 2025
+===========================================
+*/
 
+/* IMPORTAÇÃO DE FONTES */
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* VARIÁVEIS CSS */
 :root {
   --cor-primaria: #00222a;
-  --cor-secundaria: #ff9100;
+  --cor-secundaria: #f9b71e;
   --cor-terciaria: #ffffff;
+  --azul-claro: #008ccc;
+  --azul-escuro: #0e5083;
+  --azul-secundario: #1871b5;
 }
 
+/* RESET CSS */
 * {
   margin: 0;
   padding: 0;
 }
 
-.Pai {
-  margin-bottom: 40px;
-}
-
+/* CONFIGURAÇÕES GLOBAIS */
 html {
   scroll-behavior: smooth;
-  /* Habilitando o scroll suave */
   scroll-padding-top: 90px;
 }
 
+/* ========================================
+   HEADER E NAVEGAÇÃO
+======================================== */
 header {
   position: fixed;
-  /* Mantendo o cabeçalho fixo no topo */
   top: 0;
-  left: 0;
+  left: 10px;
   right: 0;
   z-index: 1000;
-  /* Colocando o cabeçalho acima de outros elementos */
   width: 100%;
-  /* Largura total */
 }
 
+/* Logo */
 .logo-img {
-  /* Estilizando a imagem do logo */
   width: 2.4em;
-  /* Largura da imagem do logo */
   height: auto;
-  /* Altura automática para manter a proporção */
   margin: 0.2em 1em 0 0;
-  /* Margem horizontal */
-  border-radius: 5px;
+  background-color: transparent;
+  border: none;
 }
 
 .menu {
-  /* Estilizando o menu de navegação */
   display: flex;
 }
 
 .aba {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
+  font-weight: 600;
   color: #ffffff;
+  background-color: #004aad;
   text-decoration: none;
-  padding: 0px 10px 0px 10px;
+  padding: 100px 10px 0px 10px;
+  border-radius: 5px;
 }
 
 .aba:hover {
-  color: #000000;
-  border-radius: 5px;
-  background-color: aliceblue;
-  transition: 0.3s;
-}
-
-.cabecalho__ligantes {
-  justify-content: center;
-  align-items: center;
-}
-
-.menu__ligantes {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  background-color: #ff9100;
-  max-width: 100%;
-  margin: 60px;
-}
-
-.aba__ligantes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  color: aliceblue;
-  text-decoration: none;
-  padding: 5px 10px 5px 10px;
-  border-radius: 5px;
-  background-color: #00222a;
-  width: 100%;
-  max-width: 200px;
-}
-
-.aba__ligantes:hover {
-  color: #00222a;
-  border-radius: 5px;
-  background-color: aliceblue;
+  padding-bottom: 10px;
   transition: 0.3s;
 }
 
@@ -107,10 +80,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: #01134c;
+  background: #ffffff;
   height: 8vh;
   padding: 0 25px;
+  border-radius: 0 0 0 30px;
 }
+
 .nav-list {
   list-style: none;
   display: flex;
@@ -129,7 +104,7 @@ nav {
 .mobile-menu div {
   width: 40px;
   height: 6px;
-  background: #ffffff;
+  background: var(--azul-secundario);
   margin: 5px;
   transition: 0.3s;
   border-radius: 10px;
@@ -140,15 +115,15 @@ nav {
     overflow-x: hidden;
   }
 
-  .cabecalho__ligantes {
-    transform: scale(1);
-  }
-
-  .aba__ligantes {
-    padding: 5px;
-    font-size: 12px;
-    width: 120%;
-    max-width: 200px;
+  .aba {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #01134c;
+    background-color: rgba(0, 0, 68, 0);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
   }
 
   .nav-list {
@@ -163,7 +138,7 @@ nav {
     justify-content: space-around;
     transform: scale(0);
     transition: transform;
-    background-color: #01134c;
+    background-color: #ffffff;
   }
 
   .nav-list li {
@@ -178,10 +153,6 @@ nav {
 
 .nav-list.active {
   transform: translateX(0);
-}
-
-.mae {
-  margin-top: 150px;
 }
 
 @keyframes navLinkFade {
@@ -208,8 +179,10 @@ nav {
   transform: rotate(90deg) translate(-10px, 30px);
 }
 
+/* ========================================
+   ESTILOS GLOBAIS DO BODY
+======================================== */
 body {
-  /* height: 100vh; */
   background-color: var(--cor-secundaria);
   color: var(--cor-primaria);
 }
@@ -222,43 +195,303 @@ h1 {
   font-weight: bold;
 }
 
-.titulo02 {
-  color: blue;
-  padding: 10px;
-}
-
 .logo {
   width: 50%;
   border-radius: 50px;
 }
 
-.Pai {
+/* ========================================
+   SEÇÃO INICIAL - INTRODUÇÃO
+======================================== */
+.inicio {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: column;
   padding: 10%;
-  gap: 80px;
+  position: relative;
+  margin-bottom: 150px;
+  margin-top: -30px;
 }
 
-.filho01 {
-  width: 50%;
+
+.acoesanuais {
+  margin-top: 300px;
+}
+
+.inicio__container {
   display: flex;
   flex-direction: column;
+  background-color: var(--azul-secundario);
+  margin-top: 0px;
+  padding: 20px;
+  text-align: justify;
+  border-radius: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 150px;
+}
+
+.inicio__container::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--azul-escuro);
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.inicio__imagem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  outline: 8px solid #ffffff;
+  outline-offset: 0px;
+  opacity: 0.9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+}
+
+.inicio__imagem-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #114f7e;
+  margin-top: 0px;
+  padding: 20px;
+  text-align: justify;
+  border-radius: 20px;
+  box-sizing: border-box;
+  position: relative;
+  position: absolute;
+  bottom: -20px;
+  right: 150px;
+  width: 500px;
+  height: auto;
+  z-index: 10;
+  pointer-events: none;
+}
+
+
+.Paragrafo1 {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-align: justify;
+  font-weight: 500;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+/* ========================================
+   SEÇÃO ESCOLAS SOLARES
+======================================== */
+.escola {
+  padding: 10%;
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.escola__container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--azul-secundario);
+  margin-top: 0px;
+  padding: 20px;
+  text-align: justify;
+  border-radius: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.escola__container::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--azul-escuro);
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.escolaParagrafo {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-align: justify;
+  font-weight: 400;
+  text-align: start;
+}
+
+.titulo2 {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-align: start;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+
+/* ========================================
+   COMPONENTES SWIPER/CARROSSEL
+======================================== */
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiperescolas {
+  margin-bottom: 2rem;
+}
+
+/* Paginação personalizada para escolas solares */
+.swiper-paginationescolas {
+  position: relative !important;
+  bottom: auto !important;
+}
+
+/* ========================================
+   SEÇÃO QUIZ SOLAR
+======================================== */
+
+.quiz {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 10%;
+  gap: 80px;
+  margin-top: -150px;
+}
+
+.quiz__container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--azul-secundario);
+  margin-top: 0px;
+  margin-right: 80px;
+  padding: 20px;
+  text-align: justify;
+  border-radius: 10px;
+  width: 70%;
+  box-sizing: 5px 5px 10px #005f6b;
+  position: relative;
+}
+
+.quiz__container::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--azul-escuro);
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.Paragrafo3 {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-align: justify;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+
+.botao__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  outline: 2px solid var(--azul-secundario);
+  outline-offset: -4px;
+  padding: 10px 25px;
+}
+
+
+.botao__logo:hover {
+  outline: 4px solid var(--azul-secundario);
+  outline-offset: -4px;
+}
+
+.portifolio {
+  font-size: 0.75rem;
+  color: var(--azul-secundario);
+  border-radius: 10px;
+  font-weight: 100;
+}
+
+.quiz-img {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+  margin-left: -300px;
+  margin-right: -10px;
+}
+
+.caixa2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 50%;
   gap: 20px;
 }
 
-.titulo01 {
-  text-align: center;
-  font-size: 1.5rem;
-  font-family: "Krona One", sans-serif;
+
+.quizweb__container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--azul-secundario);
+  margin-top: 0px;
+  padding: 20px;
+  text-align: justify;
+  border-radius: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 30px;
 }
 
-.Paragrafo {
-  font-size: 1rem;
+
+.quizweb__container::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--azul-escuro);
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.Paragrafo4 {
   font-family: "Montserrat", sans-serif;
-  color: black;
+  color: white;
   text-align: justify;
+  font-weight: 400;
+  margin: -10px;
+  font-size: 3rem;
 }
 
 .rodape {
@@ -274,14 +507,6 @@ h1 {
   padding: 8em 1em 1em 1em;
 }
 
-.dir {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px;
-  padding: 5%;
-}
-
 .carrossel__titulo {
   color: #00222a;
   background-color: var(--cor-secundaria);
@@ -295,11 +520,65 @@ h1 {
   font-family: "Krona One", sans-serif;
 }
 
-.swiper-slide img {
+
+
+
+
+/* ========================================
+   SEÇÃO AÇÕES ANUAIS
+======================================== */
+.acoesanuais {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.acoesanuais__container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--azul-escuro);
+  margin-top: -90px;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  width: 80%;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.acoesanuais__container::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-color: var(--azul-secundario);
+  border-radius: 10px;
+  z-index: -1;
 }
+
+.swiper-slide img {
+  border-radius: 10px;
+}
+
+.Paragrafo2 {
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ========================================
+   CARROSSEL PRINCIPAL
+======================================== */
+
 
 .carrossel {
   padding: 0 0 1em 0;
@@ -344,32 +623,38 @@ h1 {
   padding: 1em;
 }
 
-/* ...existing code... */
+
+/* Botão de voltar ao topo */
 #btn-topo {
   position: fixed;
   bottom: 32px;
   right: 24px;
   z-index: 999;
-  background: #008ccc;
-  color: #fff;
+  background: transparent;
   border: none;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  font-size: 2rem;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s;
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
+  width: auto;
+  height: auto;
 }
-#btn-topo:hover {
-  background: #ff9100;
+
+#btn-topo img {
+  width: 35px;
+  height: 35px;
+  filter: drop-shadow(0 4px 16px rgba(249, 183, 30, 0.4));
 }
+
+#btn-topo:hover img {
+  filter: drop-shadow(0 6px 20px rgba(249, 183, 30, 0.6));
+  transform: translateY(-2px);
+}
+
 #btn-topo.show {
   opacity: 1;
   pointer-events: auto;
@@ -377,164 +662,24 @@ h1 {
 
 @media (max-width: 1000px) {
   #btn-topo {
-    box-shadow: none;
-    background: transparent;
     bottom: 16px;
     right: 16px;
-    width: 38px;
-    height: 38px;
-    font-size: 2rem;
-    min-width: 38px;
-    min-height: 38px;
-    max-width: 38px;
-    max-height: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    color: #008ccc;
   }
 
-  #btn-topo:hover {
-    background: transparent;
-    box-shadow: none;
+  #btn-topo img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #btn-topo:hover img {
+    transform: none;
   }
 }
 
-.apostilas {
-  background: rgb(255, 255, 255);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  margin: 1em 1.8em;
-  padding: 1em;
-}
-
-.apostilas__titulo {
-  font-family: "Krona One", sans-serif;
-  font-size: 3rem;
-  color: #00222a;
-  background-color: var(--cor-secundaria);
-  border-radius: 10px;
-  text-align: center;
-  margin-bottom: 1em;
-  padding: 0.5em;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.apostilas__cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 1em;
-  margin: 0 auto;
-  max-width: 1200px;
-  /* Limita a largura máxima dos cards */
-}
-
-.apostilas__card--1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.403);
-  padding: 20px;
-}
-
-.apostilas__card--2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.403);
-  padding: 20px;
-}
-
-.apostilas__nome {
-  font-family: "Krona One", sans-serif;
-  font-size: 1.5rem;
-  color: #00222a;
-  text-align: center;
-  margin-bottom: 0.5em;
-}
-
-.apostilas__img {
-  width: 30em;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-  background-image: url(/asset/livraria.png);
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-  margin-bottom: 10px;
-  margin: 0 -10em;
-}
-
-.apostilas__texto {
-  display: flex;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  color: #00222a;
-  text-align: justify;
-  align-items: center;
-  margin: 0.75em 2em 0 0;
-}
-
-a {
-  text-decoration: none;
-  color: #f9f9f9;
-}
-
-.apostilas__titulo {
-  font-family: "Krona One", sans-serif;
-  font-size: 50px;
-  color: #00222a;
-  text-align: center;
-  margin: 0.5em 0.5em;
-  padding: 0.25em 0;
-}
-
-.apostilas__botao {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 1em;
-  color: #f9f9f9;
-  background-color: #008ccc;
-  border-radius: 10px;
-  text-decoration: none;
-  margin: 0.75em 0 0 0;
-  cursor: pointer;
-}
 
 @media (max-width: 1000px) {
-  .Pai {
-    flex-direction: column-reverse;
-    padding: 5%;
-    margin-top: 4rem;
-  }
 
-  .Paragrafo {
-    text-align: justify;
-  }
 
-  .swiper-container {
-    display: flex;
-    width: 100%;
-  }
-
-  .filho01 {
-    width: auto;
-    margin-top: -3rem;
-  }
 
   .carrossel__titulo {
     font-size: 25px;
@@ -557,69 +702,6 @@ a {
     margin: 0;
   }
 
-  .apostilas__titulo {
-    font-family: "Krona One", sans-serif;
-    font-size: 2rem;
-    color: #00222a;
-    background-color: var(--cor-secundaria);
-    border-radius: 10px;
-    text-align: center;
-    margin-bottom: 1em;
-    padding: 0.5em;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-
-  .apostilas {
-    background: rgb(255, 255, 255);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    padding: 0.3em 0.5em;
-    margin: 1em;
-  }
-
-  .apostilas__cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 1em;
-    margin: 0 auto;
-    max-width: 1200px;
-    /* Limita a largura máxima dos cards */
-  }
-  .apostilas__img {
-    width: 22em;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    background-image: url(/asset/livraria.png);
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-    margin-bottom: 10px;
-  }
-
-  .apostilas__texto {
-    display: flex;
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.8rem;
-    color: #00222a;
-    text-align: justify;
-    align-items: center;
-    margin-top: 0.5em;
-    margin: 0 1em;
-  }
-
-  .apostilas__titulo {
-    font-family: "Krona One", sans-serif;
-    font-size: 1.5rem;
-    color: #00222a;
-    text-align: center;
-    margin: 0.5em 0.5em;
-    padding: 0.25em 0;
-  }
 
   .carrossel__titulo {
     font-family: "Krona One", sans-serif;
@@ -636,5 +718,718 @@ a {
 
   .rodape {
     font-size: 1.25rem;
+  }
+}
+
+/* Estilos do Quiz Web */
+.quizweb {
+  padding: 5% 10%;
+  margin-top: 0;
+}
+
+.quiz-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  width: 80%;
+  ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 28px;
+  margin: 0 auto;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.18), 0 1.5px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.quiz-content h2 {
+  margin-top: 0;
+  color: #00222a;
+}
+
+.quiz-inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 50px;
+  color: #00222a;
+  border-radius: 10px;
+
+}
+
+.btn-iniciar-quiz {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background: #008CCC;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-iniciar-quiz:hover {
+  background: #006ba3;
+}
+
+.quiz-texto {
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.logo-quiz {
+  width: 200px;
+  height: auto;
+}
+
+.select-difficulty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.select-difficulty h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #00222a;
+  margin-bottom: 5px;
+}
+
+.select-difficulty button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #008CCC;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.select-difficulty button:hover {
+  background-color: #006ba3;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.spnQtd {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #008CCC;
+  font-weight: 600;
+}
+
+.question {
+  font-size: 1.2rem;
+  color: #00222a;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.answer {
+  width: 100%;
+  text-align: left;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  color: #00222a;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.answer:hover {
+  background-color: #008CCC;
+  color: white;
+  border-color: #008CCC;
+}
+
+.btn-correct {
+  background-color: #4CAF50 !important;
+  color: #fff !important;
+  border-color: #4CAF50 !important;
+}
+
+.btn-wrong {
+  background-color: #f44336 !important;
+  color: #fff !important;
+  border-color: #f44336 !important;
+}
+
+.finish {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.finish span {
+  font-size: 1.1rem;
+  color: #00222a;
+  line-height: 1.5;
+}
+
+.finish button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #008CCC;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.finish button:hover {
+  background-color: #006ba3;
+}
+
+.timer {
+  font-size: 1.1rem;
+  color: #008CCC;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.question-points {
+  color: #008CCC;
+  margin-bottom: 10px;
+  display: block;
+  min-height: 24px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.center-content table {
+  margin: 0 auto;
+}
+
+.center-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* ========================================
+   SEÇÃO DAS APOSTILAS
+======================================== */
+
+.apostilas {
+  display: flex;
+  width: 100%;
+  padding: 5%;
+  flex-direction: column;
+}
+
+
+.apostilasUp {
+  padding: 1rem 1rem 1rem 7.5rem;
+}
+
+.apostilaUp_container {
+  display: flex;
+  flex-direction: column;
+  background-color: #0e5083;
+  margin-right: 80px;
+  padding: 20px;
+  text-align: justify;
+  border-radius: 10px;
+  width: 70%;
+  position: relative;
+}
+
+.apostilaUp_container::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: #0097b2;
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.apostilaUpParagraph {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-align: justify;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.apostilaUpTitle {
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.iconeDownload {
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apostilasDown {
+  width: 80%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  flex-direction: row;
+
+}
+
+.apostilaCard {
+  background: var(--azul-secundario);
+  border-radius: 1rem;
+  position: relative;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.apostilaCard::before {
+  content: '';
+  position: absolute;
+  top: .5rem;
+  left: .8rem;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  /* contorno */
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+.apCardImg {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apCardImg img {
+  width: 100%;
+  height: auto;
+  border-radius: .5rem 0 0 .5rem;
+  object-fit: cover;
+}
+
+.apostilaCard>div:nth-child(2) {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.apostilaText {
+  color: #fff;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.botao_card {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--azul-secundario);
+  padding: 0.5rem 1rem;
+  border-radius: .5rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  align-self: center;
+}
+
+.botao_card p {
+  font-weight: bold;
+}
+
+/*focando no mobile*/
+
+@media (max-width: 768px) {
+
+  body {
+    width: 100dvw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  header {
+    width: 100vw;
+    left: 0;
+    right: 0;
+  }
+
+  .mobile-menu div {
+    width: 1.5rem;
+    height: .3rem;
+    background: var(--azul-claro);
+    margin: .2rem;
+    transition: 0.3s;
+    border-radius: .6rem;
+  }
+
+  .nav-list {
+    border-radius: 0 0 0 1rem;
+    width: 35%;
+    height: 11rem;
+    top: 7.5vh;
+
+  }
+
+  .aba {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--azul-claro);
+    text-decoration: none;
+    padding: 0;
+  }
+
+
+  .mobile-menu.active .line1 {
+    transform: rotate(90deg) translate(.5rem, .4rem) scale(.75);
+  }
+
+  .mobile-menu.active .line2 {
+    transform: rotate(90deg) translate(0, -.2rem) scale(.75);
+  }
+
+  .mobile-menu.active .line3 {
+    transform: rotate(90deg) translate(-.5rem, 1rem) scale(.75);
+  }
+
+  /*parte inicial*/
+  .inicio {
+    padding: 5%;
+    margin-top: 16rem;
+    margin-bottom: 0;
+  }
+
+  .inicio__container {
+    margin-bottom: 0;
+    width: 95%;
+  }
+
+  .inicio__container .Paragrafo1 {
+    margin: 0;
+  }
+
+  .inicio__imagem-container {
+    position: absolute;
+    width: 90%;
+    height: 150px;
+    pointer-events: auto;
+    top: -10rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .inicio__imagem {
+    opacity: 1;
+  }
+
+  /*parte das escolas*/
+  .escola {
+    margin-top: 2rem;
+    padding: 5%;
+  }
+
+  .escola__container {
+    margin-bottom: 1.5rem;
+    width: 98%;
+  }
+
+
+  /*parte do quiz */
+  .quiz {
+    flex-direction: column;
+    padding: 5%;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .quiz__container {
+    margin: 0;
+    width: 95%;
+    box-sizing: border-box;
+  }
+
+  .Paragrafo3 {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .caixa2 {
+    width: 100%;
+    align-items: center;
+  }
+
+  .quiz-img {
+    width: 100%;
+    max-width: 300px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .botao__logo {
+    padding: 8px 20px;
+  }
+
+  .portifolio {
+    font-size: 0.7rem;
+  }
+
+  /*parte do quiz web*/
+
+  .quizweb {
+    box-sizing: border-box;
+    padding: 5%;
+    margin-top: 2rem;
+  }
+
+  .quizweb__container {
+    margin: 0;
+    padding-left: 2rem;
+  }
+
+  .Paragrafo4 {
+    font-size: 1.5rem;
+  }
+
+  .quiz-content {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    min-height: 300px;
+    box-sizing: border-box;
+    margin-top: 2rem;
+  }
+
+  .quiz-inicio {
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .quiz-texto {
+    font-size: 0.9rem;
+    color: #ffffff;
+  }
+
+  .logo-quiz {
+    width: 150px;
+  }
+
+  .btn-iniciar-quiz {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+
+  .select-difficulty {
+    max-width: 100%;
+  }
+
+  .select-difficulty h3 {
+    font-size: 1rem;
+  }
+
+  .select-difficulty button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .question {
+    font-size: 1rem;
+  }
+
+  .answer {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+
+  .spnQtd {
+    font-size: 1rem;
+  }
+
+  .timer {
+    font-size: 1rem;
+  }
+
+  .question-points {
+    font-size: 1rem;
+  }
+
+  .finish span {
+    font-size: 1rem;
+  }
+
+  .finish button {
+    font-size: 0.9rem;
+    padding: 10px 25px;
+  }
+
+  .question {
+    font-size: 1rem;
+  }
+
+  .answer {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+
+  .logo-quiz {
+    width: 150px;
+  }
+
+  /*parte das apostilas*/
+  .apostilas {
+    box-sizing: border-box;
+  }
+
+  .apostilasUp {
+    padding: 0;
+  }
+
+  .apostilaUp_container {
+    margin-right: 0;
+    padding: 1rem;
+    text-align: justify;
+    border-radius: .5rem;
+    width: 98%;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .apostilaUpParagraph {
+    margin: .5rem auto;
+  }
+
+  .apostilaUpTitle {
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .iconeDownload {
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .apostilasDown {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 0;
+    margin-top: 1rem;
+  }
+
+  .apostilaCard {
+    width: 95%;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 1rem;
+    box-sizing: border-box;
+  }
+
+  .apostilaCard:nth-child(2) {
+    margin-top: 2rem;
+  }
+
+  .apCardImg {
+    width: 100%;
+  }
+
+  .apCardImg img {
+    width: 50%;
+  }
+
+  .apostilaCard>div:nth-child(2) {
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+
+  /*parte das acoes anuais */
+  .acoesanuais {
+    margin-top: 2rem;
+    box-sizing: border-box;
+    padding: 5%;
+  }
+
+  .acoesanuais__container {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .Paragrafo2 {
+    font-size: 2rem;
+  }
+
+  /* Botões carrossel ano - Tablet */
+  .swiper-button-nextano,
+  .swiper-button-prevano {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .swiper-button-nextano::after,
+  .swiper-button-prevano::after {
+    font-size: 1rem;
   }
 }

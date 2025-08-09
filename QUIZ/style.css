@@ -5,18 +5,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 .rodape {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-direction: column;
-    font-size: 1.5rem;
-    font-family: 'Krona One', sans-serif !important;
-    color: #00222a;
-    text-align: center;
-    padding: 8em 1em 1em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-family: 'Krona One', sans-serif !important;
+  color: #00222a;
+  text-align: center;
+  padding: 8em 1em 1em 1em;
 
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -28,26 +29,27 @@
   margin: 0;
   padding: 0;
 }
+
 /* ...existing code... */
 
 
 
 .txtrodape {
-    font-size: 0.7rem;
-    font-family: 'Krona One', sans-serif !important;
+  font-size: 0.7rem;
+  font-family: 'Krona One', sans-serif !important;
 }
 
 .social-logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .rodape__img {
-    width: 1em;
-    height: 1em;
+  width: 1em;
+  height: 1em;
 }
 
 
@@ -78,9 +80,9 @@ h2 {
 /* ...existing code... */
 
 :root {
-    --cor-primaria: #00222a;
-    --cor-secundaria: #ff9100;
-    --cor-terciaria: #ffffff;
+  --cor-primaria: #00222a;
+  --cor-secundaria: #ff9100;
+  --cor-terciaria: #ffffff;
 }
 
 
@@ -125,18 +127,24 @@ header {
 
 
 .aba {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 0px 10px 0px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0px 10px 0px 10px;
 }
 
 .aba:hover {
-    color: #000000;
-    border-radius: 5px;
-    background-color: aliceblue;
-    transition: 0.3s;
+  color: #000000;
+  border-radius: 5px;
+  background-color: aliceblue;
+  transition: 0.3s;
+}
+
+.aba[style*="padding-bottom"] {
+  color: #000000;
+  border-radius: 5px;
+  background-color: aliceblue;
 }
 
 nav {
@@ -146,7 +154,7 @@ nav {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   background: #01134c;
   height: 8vh;
-  padding: 0 25px;  
+  padding: 0 25px;
 }
 
 .nav-list {
@@ -172,28 +180,29 @@ nav {
   transition: 0.3s;
   border-radius: 10px;
 }
-.quiz-inicio{
-display: flex; 
-flex-direction: column; 
-align-items: center; 
-gap: 30px;
-padding: 20px 20px;
-color: #ffffff;
-border-radius: 10px;
+
+.quiz-inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 20px;
+  color: #ffffff;
+  border-radius: 10px;
 }
 
-.btn-iniciar-quiz{
-padding: 10px 24px; 
-font-size: 1.2rem; 
-border-radius: 8px; 
-background: #008CCC; 
-color: #fff; 
-border: none; 
-cursor: pointer;
+.btn-iniciar-quiz {
+  padding: 10px 24px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background: #008CCC;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
 
-.quiz-texto{
+.quiz-texto {
   font-size: 1rem;
   color: #ffffff;
 }
@@ -220,7 +229,7 @@ cursor: pointer;
     justify-content: space-around;
     transform: scale(0);
     transition: transform;
-    background-color: #01134c ;
+    background-color: #01134c;
   }
 
 
@@ -289,7 +298,7 @@ main {
   text-align: center;
   font-size: 28px;
   /* Sombreamento */
-  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18), 0 1.5px 4px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.18), 0 1.5px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .content {
@@ -383,13 +392,14 @@ button {
     padding: 10px;
     font-size: 20px;
   }
-      .txtrodape {
-        font-size: 0.5rem;
-    }
 
-    .rodape {
-        font-size: 1.25rem;
-    }
+  .txtrodape {
+    font-size: 0.5rem;
+  }
+
+  .rodape {
+    font-size: 1.25rem;
+  }
 
 
   .select-difficulty {
@@ -402,18 +412,18 @@ button {
     padding: 10px;
     font-size: 1rem;
   }
-  
-button {
-  width: 100%;
-  text-align: center;
-  padding: 5px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #008CCC;
-  color: white;
-  font-size: 16px;
-}
+
+  button {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #008CCC;
+    color: white;
+    font-size: 16px;
+  }
 }
 
 .center-content {
@@ -422,9 +432,11 @@ button {
   align-items: center;
   width: 100%;
 }
+
 .center-content table {
   margin: 0 auto;
 }
+
 .center-content img {
   display: block;
   margin-left: auto;
@@ -444,7 +456,7 @@ button {
   height: 44px;
   font-size: 2rem;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s;
@@ -453,36 +465,38 @@ button {
   justify-content: center;
   padding: 0;
 }
+
 #btn-topo:hover {
   background: #ff9100;
 }
+
 #btn-topo.show {
   opacity: 1;
   pointer-events: auto;
 }
 
 @media (max-width: 1000px) {
-    #btn-topo {
-        box-shadow: none;
-        background: transparent;
-        bottom: 16px;
-        right: 16px;
-        width: 38px;
-        height: 38px;
-        font-size: 2rem;
-        min-width: 38px;
-        min-height: 38px;
-        max-width: 38px;
-        max-height: 38px;
-        display: flex;
-        color: #008CCC;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-    }
+  #btn-topo {
+    box-shadow: none;
+    background: transparent;
+    bottom: 16px;
+    right: 16px;
+    width: 38px;
+    height: 38px;
+    font-size: 2rem;
+    min-width: 38px;
+    min-height: 38px;
+    max-width: 38px;
+    max-height: 38px;
+    display: flex;
+    color: #008CCC;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
 
-    #btn-topo:hover {
-        background: transparent;
-        box-shadow: none;
-    }
+  #btn-topo:hover {
+    background: transparent;
+    box-shadow: none;
+  }
 }
