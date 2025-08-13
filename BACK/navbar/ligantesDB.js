@@ -53,12 +53,7 @@ export const membros = {
       foto: "./asset/ligantes/Aline.webp",
       link: "#"
     },
-    {
-      nome: "Jailson Iran",
-      cargo: "Membro",
-      foto: "./asset/ligantes/Exemplar.webp",
-      link: "#"
-    },
+    ,
 
     {
       nome: "Maxwell Cardoso",
