@@ -47,13 +47,6 @@ export const membros = {
       foto: "./asset/ligantes/Israel.webp",
       link: "https://www.linkedin.com/in/israel-soares-4058a8189?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
-    {
-      nome: "Aline Crislainy",
-      cargo: "Membro",
-      foto: "./asset/ligantes/Aline.webp",
-      link: "#"
-    },
-    ,
 
     {
       nome: "Maxwell Cardoso",
@@ -62,12 +55,6 @@ export const membros = {
       link: "#"
     },
 
-    {
-      nome: "Lucas de Sousa",
-      cargo: "Membro",
-      foto: "./asset/ligantes/Lucas.webp",
-      link: "#"
-    },
 
     {
       nome: "Nicolas Nilton",
@@ -192,24 +179,7 @@ export const membros = {
       foto: "./asset/ligantes/Exemplar.webp",
       link: "#"
     },
-    {
-      nome: "Alan Jones",
-      cargo: "Membro",
-      foto: "./asset/ligantes/Exemplar.webp",
-      link: "#"
-    },
-    {
-      nome: "Breno Rocha",
-      cargo: "Membro",
-      foto: "./asset/ligantes/ligante9.webp",
-      link: "#"
-    },
-    {
-      nome: "Tiphany Natsu",
-      cargo: "Membro",
-      foto: "./asset/ligantes/Thiphany.webp",
-      link: "#"
-    }
+
   ],
   diretoriaComunicacao: [
     {
@@ -236,12 +206,7 @@ export const membros = {
       foto: "./asset/ligantes/ligante23.webp",
       link: "#"
     },
-    {
-      nome: "Jhuan Aquino",
-      cargo: "Membro",
-      foto: "./asset/ligantes/Exemplar.webp",
-      link: "http://www.linkedin.com/in/jhuan-aquino-285646352"
-    },
+
     {
       nome: "Karlos Gabriell",
       cargo: "Membro",
