@@ -109,12 +109,7 @@ export const membros = {
       foto: "./asset/ligantes/Toni.webp",
       link: "#"
     },
-    {
-      nome: "Marcos Gabriel",
-      cargo: "Membro",
-      foto: "./asset/ligantes/ligante7.webp",
-      link: "#"
-    },
+
 
     {
       nome: "Ana Karoline",
