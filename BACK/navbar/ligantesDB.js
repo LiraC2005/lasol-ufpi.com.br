@@ -63,12 +63,6 @@ export const membros = {
       link: "#"
     },
 
-    {
-      nome: "Luis Carlos",
-      cargo: "Membro",
-      foto: "./asset/ligantes/Exemplar.webp",
-      link: "#"
-    },
 
     {
       nome: "Jailson Iran",
@@ -103,12 +97,7 @@ export const membros = {
       foto: "./asset/ligantes/Exemplar.webp",
       link: "#"
     },
-    {
-      nome: "Antoniel Xavier",
-      cargo: "Membro",
-      foto: "./asset/ligantes/Toni.webp",
-      link: "#"
-    },
+
 
 
     {
@@ -236,6 +225,18 @@ export const membros = {
     },
     {
       nome: "Luís Sílvio",
+      cargo: "Membro",
+      foto: "./asset/ligantes/Exemplar.webp",
+      link: "#"
+    },
+    {
+      nome: "Antoniel Xavier",
+      cargo: "Membro",
+      foto: "./asset/ligantes/Toni.webp",
+      link: "#"
+    },
+    {
+      nome: "Luis Carlos",
       cargo: "Membro",
       foto: "./asset/ligantes/Exemplar.webp",
       link: "#"
