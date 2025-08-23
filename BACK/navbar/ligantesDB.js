@@ -137,7 +137,7 @@ export const membros = {
       nome: "Klemeson Lucas",
       cargo: "Membro",
       foto: "./asset/ligantes/Klemeson.webp",
-      link: "#"
+      link: "https://www.linkedin.com/in/klemesonneves?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
       nome: "Matheus Carvalho",
