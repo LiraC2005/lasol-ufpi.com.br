@@ -24,7 +24,7 @@ export const membros = {
       nome: "Débora Vitória",
       cargo: "Vice-Presidente",
       foto: "./asset/ligantes/Debora.webp",
-      link: "#"
+      link: "https://www.instagram.com/_deboravitoriaa?utm_source=ig_web_button_share_sheet&igsh=OHFuNzhieXlrdXNq"
     }
   ],
   diretoriaEnsino: [
@@ -32,7 +32,7 @@ export const membros = {
       nome: "Luis Gusthavo",
       cargo: "Diretor",
       foto: "./asset/ligantes/Luis_Gusthavo.webp",
-      link: "#"
+      link: "https://www.instagram.com/luisgusthavo_/?utm_source=ig_web_button_share_sheet"
     },
     {
       nome: "Isaac Sousa",
@@ -52,7 +52,7 @@ export const membros = {
       nome: "Maxwell Cardoso",
       cargo: "Membro",
       foto: "./asset/ligantes/Exemplar.webp",
-      link: "#"
+      link: "https://www.instagram.com/maxwell_cardoso777/?utm_source=ig_web_button_share_sheet"
     },
 
 
@@ -68,7 +68,7 @@ export const membros = {
       nome: "Jailson Iran",
       cargo: "Membro",
       foto: "./asset/ligantes/Exemplar.webp",
-      link: "#"
+      link: "https://www.instagram.com/jailsoniran/?utm_source=ig_web_button_share_sheet"
     },
 
   ],
@@ -77,25 +77,25 @@ export const membros = {
       nome: "Victor Gabriel",
       cargo: "Diretor",
       foto: "./asset/ligantes/Victor.webp",
-      link: "#"
+      link: "https://www.instagram.com/vgabriel.rc?utm_source=ig_web_button_share_sheet&igsh=YWd1dGM5b2Q1a3lm"
     },
     {
       nome: "Maria Manuela",
       cargo: "Vice-Diretora",
       foto: "./asset/ligantes/Manuela.webp",
-      link: "#"
+      link: "https://www.instagram.com/maria12_manuela?utm_source=ig_web_button_share_sheet&igsh=Z2h0ODZwZjg3ZGp5"
     },
     {
       nome: "Italo Abreu",
       cargo: "Membro",
       foto: "./asset/ligantes/Italo.webp",
-      link: "#"
+      link: "https://www.instagram.com/it_abreu/?utm_source=ig_web_button_share_sheet"
     },
     {
       nome: "Jonathan Vinícius",
       cargo: "Membro",
       foto: "./asset/ligantes/Exemplar.webp",
-      link: "#"
+      link: "https://www.instagram.com/jonathanvasilva/?utm_source=ig_web_button_share_sheet"
     },
 
 
@@ -104,7 +104,7 @@ export const membros = {
       nome: "Ana Karoline",
       cargo: "Membro",
       foto: "./asset/ligantes/ligante8.webp",
-      link: "#"
+      link: "https://www.instagram.com/akmarttins?utm_source=ig_web_button_share_sheet&igsh=MTFyYjBtcW1kdjcwbQ=="
     },
 
     {
@@ -119,18 +119,18 @@ export const membros = {
       nome: "Naywan Raphael",
       cargo: "Diretor",
       foto: "./asset/ligantes/Naywan.webp",
-      link: "#"
+      link: "https://www.instagram.com/naywan_raphael/?utm_source=ig_web_button_share_sheet"
     },
     {
       nome: "Maria Fernanda",
       cargo: "Vice-Diretora",
       foto: "./asset/ligantes/Fernanda.webp",
-      link: "#"
+      link: "https://www.instagram.com/mariaferndx/?utm_source=ig_web_button_share_sheet"
     },
     {
       nome: "Lucas B. Diniz",
       cargo: "Membro",
-      foto: "./asset/ligantes/Exemplar.webp",
+      foto: "./asset/ligantes/LUCASBD.webp",
       link: "https://www.linkedin.com/in/lucasbarbosadiniz"
     },
     {
@@ -142,14 +142,14 @@ export const membros = {
     {
       nome: "Matheus Carvalho",
       cargo: "Membro",
-      foto: "./asset/ligantes/Exemplar.webp",
+      foto: "./asset/ligantes/matheuscarvalho.webp",
       link: "https://www.linkedin.com/in/matheus-silva-de-carvalho-133795257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
       nome: "Antoio Gustavo",
       cargo: "Membro",
       foto: "./asset/ligantes/Gustavo.webp",
-      link: "#"
+      link: "https://www.instagram.com/gustavosmoura_?utm_source=ig_web_button_share_sheet&igsh=b3Z3Z2c1aWhnY2lk"
     },
     {
       nome: "João Marcelo",
@@ -170,7 +170,7 @@ export const membros = {
       nome: "Clara Harijan",
       cargo: "Diretora",
       foto: "./asset/ligantes/Clara.webp",
-      link: "#"
+      link: "https://www.instagram.com/clara_harijan?utm_source=ig_web_button_share_sheet&igsh=bGo5ZXFxMWc4Njdt"
     },
     {
       nome: "Matheus Leite",
@@ -188,7 +188,7 @@ export const membros = {
       nome: "Samuel",
       cargo: "Membro",
       foto: "./asset/ligantes/ligante23.webp",
-      link: "#"
+      link: "https://www.instagram.com/samu.arauj/?utm_source=ig_web_button_share_sheet"
     },
 
     {
@@ -221,7 +221,7 @@ export const membros = {
       nome: "Caio Eros",
       cargo: "Membro",
       foto: "./asset/ligantes/Eros.webp",
-      link: "#"
+      link: "https://www.instagram.com/ersx.lima/?utm_source=ig_web_button_share_sheet"
     },
     {
       nome: "Luís Sílvio",
@@ -233,13 +233,13 @@ export const membros = {
       nome: "Antoniel Xavier",
       cargo: "Membro",
       foto: "./asset/ligantes/Toni.webp",
-      link: "#"
+      link: "https://www.instagram.com/antoniel_xavier_?utm_source=ig_web_button_share_sheet&igsh=ZmRnaDd5OW0zMndt"
     },
     {
       nome: "Luis Carlos",
       cargo: "Membro",
       foto: "./asset/ligantes/Exemplar.webp",
-      link: "#"
+      link: "https://www.instagram.com/luiscarloss_11?utm_source=ig_web_button_share_sheet&igsh=MWZ2dXJtNmx5dGZwOA=="
     },
 
   ],
