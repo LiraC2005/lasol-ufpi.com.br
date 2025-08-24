@@ -375,6 +375,7 @@ h1 {
   padding: 10%;
   gap: 80px;
   margin-top: -150px;
+  margin-bottom: -20px;
 }
 
 .quiz__container {
@@ -1205,7 +1206,8 @@ h1 {
     flex-direction: column;
     padding: 5%;
     gap: 2rem;
-    margin-top: 2rem;
+    margin: 0;
+    margin-top: -50px;
   }
 
   .quiz__container {
