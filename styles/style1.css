@@ -1443,3 +1443,9 @@ h1 {
     font-size: 1rem;
   }
 }
+
+@media (max-width: 768px) {
+  .inicio__imagem-container {
+    max-width: 85%;
+  }
+}

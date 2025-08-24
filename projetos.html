@@ -32,6 +32,7 @@
         <li><a class="aba" href="projetos.html" style="padding-bottom: 10px;">Projetos</a></li>
         <li><a class="aba" href="ligantes.html">Ligantes</a></li>
         <li><a class="aba" href="seletivo.html">Seletivo</a></li>
+        <li><a class="aba" href="quiz.html">Quiz</a></li>
         <li><a class="aba" href="noticias.html">Notícias</a></li>
       </ul>
     </nav>
@@ -75,12 +76,50 @@
         <div class="swiper-slide">
           <img src="asset/escolas_solares/esc2.svg" alt="Projeto Escolas Solares - Slide 2" />
         </div>
+        <div class="swiper-slide">
+          <img src="asset/escolas_solares/esc3.svg" alt="Projeto Escolas Solares - Slide 2" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/escolas_solares/esc4.svg" alt="Projeto Escolas Solares - Slide 2" />
+        </div>
 
       </div>
       <!-- Paginação do carrossel -->
       <div class="swiper-pagination swiper-paginationescolas"></div>
     </div>
 
+
+
+    <section class="escola__container">
+      <h1 class="titulo2">
+        SerTãoSol</h1>
+      <p class="escolaParagrafo">Uma iniciativa de extenção da Universidade Federal do Piauí, cujo objetivo é
+        levar energia solar para comunidades necessitadas envolvidas na agricultura familiar sendo realizada por
+        meio de parcerias com empresas privadas e campanhas de captação de recursos.<a
+          href="https://www.sertaosol.com.br/in%C3%ADcio" style=" color: #00335b; margin-left: 10px;">Saiba
+          mais sobre o projeto</a></p>
+
+    </section>
+    <!-- Carrossel das Escolas Solares -->
+    <div style="width: 100%;" class="swiper swiperescolas">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="asset/Sertaosol/ser0.svg" alt="Projeto SerTãoSol - Slide 0" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/Sertaosol/ser1.svg" alt="Projeto SerTãoSol - Slide 1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/Sertaosol/ser2.svg" alt="Projeto SerTãoSol - Slide 2" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/Sertaosol/ser3.svg" alt="Projeto SerTãoSol - Slide 3" />
+        </div>
+
+      </div>
+      <!-- Paginação do carrossel -->
+      <div class="swiper-pagination swiper-paginationescolas"></div>
+    </div>
     <section class="escola__container">
       <h1 class="titulo2">
         Canindé Solar</h1>
@@ -115,40 +154,6 @@
       <div class="swiper-pagination swiper-paginationescolas"></div>
     </div>
 
-    <section class="escola__container">
-      <h1 class="titulo2">
-        SerTãoSol</h1>
-      <p class="escolaParagrafo">Uma iniciativa de extenção da Universidade Federal do Piauí, cujo objetivo é
-        levar energia solar para comunidades necessitadas envolvidas na agricultura familiar sendo realizada por
-        meio de parcerias com empresas privadas e campanhas de captação de recursos.<a
-          href="https://www.sertaosol.com.br/in%C3%ADcio" style=" color: #00335b; margin-left: 10px;">Saiba
-          mais sobre o projeto</a></p>
-
-    </section>
-
-    <!-- Carrossel das Escolas Solares -->
-    <div style="width: 100%;" class="swiper swiperescolas">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="asset/Sertaosol/ser0.svg" alt="Projeto SerTãoSol - Slide 0" />
-        </div>
-        <div class="swiper-slide">
-          <img src="asset/Sertaosol/ser1.svg" alt="Projeto SerTãoSol - Slide 1" />
-        </div>
-        <div class="swiper-slide">
-          <img src="asset/Sertaosol/ser2.svg" alt="Projeto SerTãoSol - Slide 2" />
-        </div>
-        <div class="swiper-slide">
-          <img src="asset/Sertaosol/ser3.svg" alt="Projeto SerTãoSol - Slide 3" />
-        </div>
-        <div class="swiper-slide">
-          <img src="asset/Sertaosol/ser4.svg" alt="Projeto SerTãoSol - Slide 4" />
-        </div>
-      </div>
-      <!-- Paginação do carrossel -->
-      <div class="swiper-pagination swiper-paginationescolas"></div>
-    </div>
-
 
   </main>
 
@@ -169,26 +174,26 @@
 
     <!-- Imagem do Quiz -->
     <div class="caixa2">
-      <img src="./asset/projetos/QUIZ.svg" alt="QUIZ" class="quiz-img">
+      <a href="quiz.html"><img src="./asset/projetos/QUIZ.svg" alt="QUIZ" class="quiz-img"></a>
     </div>
   </main>
-
-  <!-- SEÇÃO QUIZ WEB INTERATIVO -->
-  <main class="quizweb">
+  <!-- quiz web
+ SEÇÃO QUIZ WEB INTERATIVO 
+<main class="quizweb">
     <section class="quizweb__container">
       <h1 class="Paragrafo4" style=" font-weight: 700; text-align: left;">
         Vamos jogar?</h1>
     </section>
-
+    
     <div class="quiz-content">
-      <!-- Tela inicial do quiz -->
+       Tela inicial do quiz
       <div class="quiz-inicio">
         <img src="img/quiz_solar.png" class="logo-quiz" alt="Logo Quiz Solar">
-
+        
         <button class="btn-iniciar-quiz">VAMOS COMEÇAR</button>
       </div>
-
-      <!-- Seleção de dificuldade (oculta inicialmente) -->
+      
+       Seleção de dificuldade (oculta inicialmente) 
       <div class="select-difficulty" style="display: none;">
         <h3>Escolha o nível de dificuldade:</h3>
         <button data-difficulty="facil">Fácil</button>
@@ -196,21 +201,22 @@
         <button data-difficulty="dificil">Difícil</button>
         <button data-difficulty="maratona">Maratona</button>
       </div>
-
-      <!-- Conteúdo das questões -->
+      
+       Conteúdo das questões 
       <div class="content">
         <span class="spnQtd"></span>
         <span class="question"></span>
         <div class="answers"></div>
       </div>
-
-      <!-- Tela de finalização -->
+      
+       Tela de finalização 
       <div class="finish">
         <span></span>
         <button>Reiniciar</button>
       </div>
     </div>
   </main>
+-->
 
   <!-- SEÇÃO APOSTILAS -->
   <main class="apostilas">
