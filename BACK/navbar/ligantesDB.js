@@ -51,7 +51,7 @@ export const membros = {
     {
       nome: "Maxwell Cardoso",
       cargo: "Membro",
-      foto: "./asset/ligantes/Exemplar.webp",
+      foto: "./asset/ligantes/MAX.webp",
       link: "https://www.instagram.com/maxwell_cardoso777/?utm_source=ig_web_button_share_sheet"
     },
 
@@ -67,7 +67,7 @@ export const membros = {
     {
       nome: "Jailson Iran",
       cargo: "Membro",
-      foto: "./asset/ligantes/Exemplar.webp",
+      foto: "./asset/ligantes/jailson.webp",
       link: "https://www.instagram.com/jailsoniran/?utm_source=ig_web_button_share_sheet"
     },
 
