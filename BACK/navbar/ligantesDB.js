@@ -146,7 +146,7 @@ export const membros = {
       link: "https://www.linkedin.com/in/matheus-silva-de-carvalho-133795257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
-      nome: "Antoio Gustavo",
+      nome: "Antônio Gustavo",
       cargo: "Membro",
       foto: "./asset/ligantes/Gustavo.webp",
       link: "https://www.instagram.com/gustavosmoura_?utm_source=ig_web_button_share_sheet&igsh=b3Z3Z2c1aWhnY2lk"
