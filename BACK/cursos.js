@@ -85,14 +85,23 @@ document.querySelectorAll('.modulo-btn').forEach(btn => {
     });
 });
 
-// Clique na aula troca o vídeo
+// Exemplo de descrições das aulas
+const descricoes = {
+    "Aula 1 - O que é Energia Solar?": "Nesta aula você vai aprender os conceitos básicos sobre energia solar, suas aplicações e importância para o futuro sustentável. O conteúdo é detalhado e pode ser extenso, por isso utilize o scroll para ler toda a descrição.",
+    "Aula 2 - História da Energia Solar": "Descubra como a energia solar evoluiu ao longo dos anos e os principais marcos históricos dessa tecnologia.",
+    "Aula 1 - Como funciona um painel solar": "Entenda o funcionamento dos painéis solares, seus componentes e como convertem luz em eletricidade.",
+    "Aula 2 - Instalação básica": "Veja o passo a passo para realizar uma instalação básica de sistema fotovoltaico residencial.",
+    "Aula 1 - Normas de segurança": "Aprenda as principais normas de segurança para instalações elétricas e sistemas solares.",
+    // Adicione mais descrições conforme necessário
+};
+
+// Clique na aula troca o vídeo e mostra descrição
 document.querySelectorAll('.aulas button').forEach(btn => {
     btn.addEventListener('click', function () {
         document.querySelectorAll('.aulas button').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         const videoId = btn.getAttribute('data-video');
         const title = btn.getAttribute('data-title');
-        // Mostra vídeo e título, esconde apresentação
         document.getElementById('curso-video').src = 'https://www.youtube.com/embed/' + videoId;
         document.getElementById('curso-video').title = title;
         document.getElementById('video-title').textContent = title;
@@ -100,6 +109,13 @@ document.querySelectorAll('.aulas button').forEach(btn => {
         document.getElementById('video-title').style.display = 'block';
         const apresentacao = document.getElementById('video-apresentacao');
         if (apresentacao) apresentacao.style.display = 'none';
+
+        // Mostra descrição da aula
+        const descDiv = document.getElementById('video-desc');
+        if (descDiv) {
+            descDiv.textContent = descricoes[title] || "";
+            descDiv.style.display = 'block';
+        }
     });
 });
 
