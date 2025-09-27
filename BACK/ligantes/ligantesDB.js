@@ -226,7 +226,7 @@ export const membros = {
     {
       nome: "Luís Sílvio",
       cargo: "Membro",
-      foto: "./asset/ligantes/Exemplar.webp",
+      foto: "./asset/ligantes/LS.webp",
       link: "#"
     },
     {
@@ -238,7 +238,7 @@ export const membros = {
     {
       nome: "Luis Carlos",
       cargo: "Membro",
-      foto: "./asset/ligantes/Exemplar.webp",
+      foto: "./asset/ligantes/LC.webp",
       link: "https://www.instagram.com/luiscarloss_11?utm_source=ig_web_button_share_sheet&igsh=MWZ2dXJtNmx5dGZwOA=="
     },
 

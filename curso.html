@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Solar - Vídeo Aulas</title>
+    <link rel="stylesheet" href="styles/stylecurso.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo-img" src="./asset/Ver.svg" alt="logo da LASOL"></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a class="aba" href="index.html">Início</a></li>
+                <li><a class="aba" href="projetos.html">Projetos</a></li>
+                <li><a class="aba" href="ligantes.html">Ligantes</a></li>
+                <li><a class="aba" href="seletivo.html">Seletivo</a></li>
+                <li><a class="aba" href="quiz.html">Quiz</a></li>
+                <li><a class="aba" href="curso.html" style="padding-bottom: 10px;">Cursos</a></li>
+                <li><a class="aba" href="noticias.html">Notícias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="curso-container">
+            <aside class="video-list">
+                <h2>Cursos Disponíveis</h2>
+                <div class="pastas">
+                    <!-- Curso 1: Solar Fotovoltaico -->
+                    <div class="curso-pasta">
+                        <button class="pasta-btn" type="button">Curso Solar Fotovoltaico</button>
+                        <div class="modulos" style="display: none;">
+                            <h3>Módulos</h3>
+                            <ul>
+                                <li>
+                                    <button class="modulo-btn" type="button">Módulo 1: Introdução</button>
+                                    <ul class="aulas" style="display: none;">
+                                        <li><button data-video="VIDEO_ID_1"
+                                                data-title="Aula 1 - O que é Energia Solar?">Aula 1 - O que é Energia
+                                                Solar?</button></li>
+                                        <li><button data-video="VIDEO_ID_2"
+                                                data-title="Aula 2 - História da Energia Solar">Aula 2 - História da
+                                                Energia Solar</button></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="modulo-btn" type="button">Módulo 2: Funcionamento</button>
+                                    <ul class="aulas" style="display: none;">
+                                        <li><button data-video="VIDEO_ID_3"
+                                                data-title="Aula 1 - Como funciona um painel solar">Aula 1 - Como
+                                                funciona um painel solar</button></li>
+                                        <li><button data-video="VIDEO_ID_4" data-title="Aula 2 - Instalação básica">Aula
+                                                2 - Instalação básica</button>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Curso 2: Inglês Científico -->
+                    <div class="curso-pasta">
+                        <button class="pasta-btn" type="button">Curso De Inglês Científico</button>
+                        <div class="modulos" style="display: none;">
+                            <h3>Módulos</h3>
+                            <ul>
+                                <li>
+                                    <button class="modulo-btn" type="button">Módulo 1: Segurança</button>
+                                    <ul class="aulas" style="display: none;">
+                                        <li><button data-video="VIDEO_ID_5"
+                                                data-title="Aula 1 - Normas de segurança">Aula 1 - Normas de
+                                                segurança</button></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Curso 3: Principios Básicos -->
+                    <div class="curso-pasta">
+                        <button class="pasta-btn" type="button">Curso De Principios Básicos</button>
+                        <div class="modulos" style="display: none;">
+                            <h3>Módulos</h3>
+                            <ul>
+                                <li>
+                                    <button class="modulo-btn" type="button">Módulo 1: Segurança</button>
+                                    <ul class="aulas" style="display: none;">
+                                        <li><button data-video="VIDEO_ID_5"
+                                                data-title="Aula 1 - Normas de segurança">Aula 1 - Normas de
+                                                segurança</button></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <section class="video-player">
+                <div id="video-apresentacao" class="video-apresentacao">
+                    <h2>Bem-vindo aos Cursos da LASOL!</h2>
+                    <div class="intro-video-space" style="margin: 24px 0 0 0;">
+                        <iframe id="intro-video" src="https://www.youtube.com/embed/Eix5_ol4k-o"
+                            title="Vídeo de Introdução" frameborder="0" allowfullscreen
+                            style="width:100%;max-width:780px;height:340px;background:#eee;border-radius:10px;display:block;margin:0 auto;">
+                        </iframe>
+                        <p style="margin: 10px 0 -50px 0;">
+                            Escolha um curso, explore os módulos e selecione uma aula para assistir. Bons
+                            estudos!
+                        </p>
+
+                    </div>
+                </div>
+                <iframe id="curso-video" style="display:none" src="" title="" frameborder="0" allowfullscreen></iframe>
+                <div class="video-title" id="video-title" style="display:none"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p class="txtrodape">COPYRIGHT ©2025, EQUIPE LASOL. TODOS OS DIREITOS RESERVADOS.</p>
+    </footer>
+    <script src="./BACK/navbar/mobile-navbar.js"></script>
+    <script src="./BACK/cursos.js"></script>
+</body>
+
+</html>
