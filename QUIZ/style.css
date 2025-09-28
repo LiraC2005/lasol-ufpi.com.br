@@ -322,9 +322,9 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 5px;
-  background: var(--cor-secundaria);
+  background: #f9b71e;
   box-sizing: border-box;
-  background-color: #002658;
+  background-color: #f9b71e;
   color: #fff;
   background-image: url("img/back.svg");
   background-size: cover;
