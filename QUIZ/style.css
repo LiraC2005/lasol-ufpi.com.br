@@ -323,6 +323,18 @@ body {
   flex-direction: column;
   gap: 5px;
   background: var(--cor-secundaria);
+  box-sizing: border-box;
+  background-color: #002658;
+  color: #fff;
+  background-image: url("img/back.svg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 body h2 {

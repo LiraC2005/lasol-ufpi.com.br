@@ -180,6 +180,18 @@ nav {
 body {
   box-sizing: border-box;
   /* height: 100vh; */
+  box-sizing: border-box;
+  background-color: var(--cor-secundaria);
+  color: #fff;
+  background-image: url("img/back.svg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
   background-color: var(--cor-secundaria);
   color: var(--cor-primaria);
 }
