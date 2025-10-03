@@ -322,19 +322,12 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 5px;
-  background: #f9b71e;
-  box-sizing: border-box;
-  background-color: #f9b71e;
-  color: #fff;
+  background: var(--cor-secundaria);
   background-image: url("img/back.svg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  width: 100%;
 }
 
 body h2 {
