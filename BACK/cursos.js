@@ -2,11 +2,11 @@
 document.querySelectorAll('.modulos').forEach(m => m.style.display = 'none');
 document.querySelectorAll('.aulas').forEach(a => a.style.display = 'none');
 
-// Cria botão de voltar
+// Cria botão de voltar com imagem deitada
 let btnVoltar = document.createElement('button');
-btnVoltar.textContent = '← Voltar aos cursos';
 btnVoltar.className = 'btn-voltar';
 btnVoltar.style.display = 'none';
+btnVoltar.innerHTML = '<img src="./asset/sua-imagem-seta.svg" alt="Voltar"> Voltar aos cursos';
 btnVoltar.style.marginBottom = '24px';
 document.querySelector('.video-list').prepend(btnVoltar);
 
