@@ -1044,6 +1044,7 @@ h1 {
   padding: 2rem;
   text-align: center;
   flex-direction: row;
+  flex-wrap: wrap;
 
 }
 
@@ -1051,7 +1052,7 @@ h1 {
   background: var(--azul-secundario);
   border-radius: 1rem;
   position: relative;
-  width: 500px;
+  width: 45%;
   display: flex;
   flex-direction: row;
   padding: 1rem;
