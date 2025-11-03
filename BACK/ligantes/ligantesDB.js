@@ -157,12 +157,7 @@ export const membros = {
       foto: "./asset/ligantes/Marcelo.webp",
       link: "https://www.instagram.com/jmnunes_v?igsh=MXIydHNudGpoaDd1ZQ=="
     },
-    {
-      nome: "Gustavo Henrique",
-      cargo: "Membro",
-      foto: "./asset/ligantes/Exemplar.webp",
-      link: "#"
-    },
+
 
   ],
   diretoriaComunicacao: [
