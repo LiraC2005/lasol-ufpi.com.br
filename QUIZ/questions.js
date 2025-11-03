@@ -71,7 +71,7 @@ const baseQuestions = [
     ],
   },
   {
-    question: "Qual país tem grande produção de energia solar?",
+    question: "Qual país tem a maior produção de energia solar?",
     difficulty: "facil",
     answers: [
       { option: "Brasil", correct: false },
