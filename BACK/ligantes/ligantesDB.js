@@ -174,12 +174,6 @@ export const membros = {
       link: "https://www.linkedin.com/in/mateus-rodrigues-de-ara%C3%BAjo-leite-972251217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
     {
-      nome: "Adeilton Juscelino",
-      cargo: "Membro",
-      foto: "./asset/ligantes/Adeilton.webp",
-      link: "https://www.linkedin.com/in/adeilton-silva-6b0318199/"
-    },
-    {
       nome: "Samuel",
       cargo: "Membro",
       foto: "./asset/ligantes/ligante23.webp",
@@ -192,12 +186,6 @@ export const membros = {
       foto: "./asset/ligantes/Karlos.webp",
       link: "https://br.linkedin.com/in/karlos-gabriell-b22a082a2"
     },
-    {
-      nome: "Teresa Cristina",
-      cargo: "Membro",
-      foto: "./asset/ligantes/Teresa.webp",
-      link: "https://www.instagram.com/_tec.teresacristina/"
-    }
   ],
   diretoriaGeral: [
     {
