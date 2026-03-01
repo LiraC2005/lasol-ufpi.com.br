@@ -253,6 +253,25 @@ h1 {
 }
 
 
+button {
+  border: none;
+  background-color: #1871b5;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  font-weight: 900;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 4px 10px;
+  margin: 10px 0 5px 0;
+}
+
+button:hover {
+  background-color: #0e5083;
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
 .seletivos {
   padding: 20px;
   background-color: var(--cor-terciaria);
@@ -276,7 +295,7 @@ h2 {
 }
 
 .seletivo h3 {
-  color: var(--cor-secundaria);
+  color: black;
   font-size: 1.5em;
   font-weight: bold;
 }
