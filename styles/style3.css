@@ -255,7 +255,7 @@ h1 {
 
 button {
   border: none;
-  background-color: #1871b5;
+  background-color: #7f7f7f;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
@@ -267,9 +267,9 @@ button {
 }
 
 button:hover {
-  background-color: #0e5083;
+  background-color: #830e0e;
   transition: 0.3s;
-  transform: scale(1.05);
+  transform: scale(1.00);
 }
 
 .seletivos {
