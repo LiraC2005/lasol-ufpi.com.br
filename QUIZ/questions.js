@@ -1,4 +1,4 @@
-// Torna todas as questões também disponíveis para o modo "maratona"
+// Torna todas as questões também disponíveis para o modo "maratona" dededadasdas
 const baseQuestions = [
   {
     question: "O que é energia solar?",
